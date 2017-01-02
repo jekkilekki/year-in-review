@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+body {
+  transition: background 0.3s ease;
+  background: #91a8d0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 1.6;
+  color: white;
+  overflow-x: hidden;
+  padding: 3em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+p {
+  margin-bottom: 1.2rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+/*a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid white;
+}*/
+.row {
+  display: flex;
+  align-content: space-between;
+}
+.row .row {
+  margin: 0 -1.5rem;
+}
+.col-2 {
+  flex: 50%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.col-3 {
+  flex: 33.33333333%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.section-aside {
+  flex: 30%;
+}
+.section-content {
+  flex: 70%;
+  padding-left: 3em;
+}
+
+header {
+  text-align: center;
+  min-height: 50vh;
+}
+header hgroup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-title {
+  font-size: 4rem;
+}
+.page-subtitle {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+.main-navigation {
+  position: fixed;
+  z-index: 2;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  /*top: -50px;*/
+  background: white;
+  color: #91a8d0;
+  font-weight: 100;
+}
+.main-navigation ul {
+  list-style: none;
+}
+.main-navigation li {
+  display: inline-block;
+  padding: 12px;
+}
+.find-me {
+  list-style: none;
+  position: fixed;
+  right: 0;
+  top: 60px;
+}
+.section-title {
+  margin-top: -1.75rem;
+  margin-bottom: 0.5rem;
+}
+.section-subtitle {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+main article {
+  margin-bottom: 5rem;
+}
+.article-title {
+  font-size: 0.95em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+}
+.article-description {
+  color: black;
+  font-size: 0.95rem;
+}
+.article-description a {
+  color: black;
+  border-color: black;
+}
+.large-number {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: -15px;
+  margin-bottom: -5px;
+}
+.fa:hover,
+.fa:active,
+.fa:focus {
+  cursor: pointer;
+  color: black;
+}
+.huge-number {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: -30px 0 -10px;
+}
+.huge-number .dashicons {
+  font-size: 4rem;
+  display: inline-block;
+  margin: 2rem;
+  /*padding: 5px;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;*/
+}
+.fa-2x {
+  margin-bottom: 0.5rem;
+}
+.course-info {
+  visibility: hidden;
+  background: rgba( 255,255,255,0.3 );
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin-bottom: 2em;
+  color: black;
+}
+.course-info p {
+  margin-bottom: 0;
+  font-style: oblique;
+}
+
+.certifications .row {
+  text-align: center;
+}
+.certifications .row a {
+  border: none;
+}
+.certifications strong {
+  font-size: 1.2em;
+}
+.lynda-complete {
+  background: white;
+  padding: 0rem;
+  margin: 0.5rem 0;
+  border-radius: 50%;
+}
+
+.sort-courses {
+  list-style: none;
+  /*text-align: center;*/
+}
+.sort-courses li {
+  background: #6c80a6;
+  font-size: 0.8em;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin: 0 0.1rem 0.5rem;
+  display: inline-block;
+}
+
+.github-calendar-full {
+  padding-top: 50px;
+}
+.github-calendar {
+  position: absolute;
+  top: 2.5rem;
+}
