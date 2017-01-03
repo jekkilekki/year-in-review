@@ -8,8 +8,8 @@
   clear: both;
 }
 body {
-  transition: background 0.3s ease;
-  background: #91a8d0;
+  transition: background 0.5s ease;
+  background: #39c;
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   font-weight: inherit;
@@ -18,9 +18,30 @@ body {
   overflow-x: hidden;
   padding: 3em;
 }
-section {
+section > .row {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 20rem;
+}
+header {
+  /*background: #39c;*/
+}
+.bg-learning {
+  background: #91a8d0;;
+}
+.bg-coding {
+  background: #9a0;
+}
+.bg-design {
+  background: skyblue;
+}
+.bg-life {
+  background: lightskyblue;
+}
+.bg-newyear {
+  background: #86B451;
+}
+footer {
+  background: #93c;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
