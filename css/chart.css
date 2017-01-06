@@ -1,0 +1,50 @@
+.barchart-container {
+
+}
+.barchart-title {
+
+}
+.barchart-title h2 {
+
+}
+.barchart-title p {
+
+}
+.barchart-content {
+  height: 300px; overflow: hidden; margin: 3rem 0 0 0;
+}
+.barchart-y-axis {
+  width: 50px; height: 300px; position: absolute; top: 0px; left: 0px;
+}
+.barchart-y-axis p {
+  width: 35px; position: absolute;
+}
+.barchart-top-label {
+  top: 0;
+}
+.barchart-bottom-label {
+  bottom: 50px;
+}
+.barchart-x-axis {
+  height: 50px; width: 100%; position: absolute; bottom: 0; left: 0;
+}
+.barchart-x-axis p {
+  position: absolute; top: 0; width: 100px; text-align: center;
+}
+.barchart-area {
+  height: 300px;
+  width: calc( 100% - 30px );
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.barchart-area .barchart-bar {
+  position: absolute;
+  bottom: 0;
+  width: 12%;
+  height: 0px;
+}
+.barchart-area .barchart-bar p {
+  text-align: center;
+  display: none;
+}

@@ -22,12 +22,15 @@ function fn() {
       codingOffset = document.getElementById( "coding" ).getBoundingClientRect(),
       designOffset = document.getElementById( "design" ).getBoundingClientRect(),
       lifeOffset = document.getElementById( "life" ).getBoundingClientRect(),
-      newyearOffset = document.getElementById( "newyear" ).getBoundingClientRect();
+      newyearOffset = document.getElementById( "newyear" ).getBoundingClientRect(),
+      windowHeight = window.innerHeight;
+
+      // alert(windowHeight);
   /**
    * Scrolling functions
    */
   document.onscroll = function() {
-    if( document.body.scrollTop - learningOffset.top > 0 ) {
+    if( document.body.scrollTop - learningOffset.top > windowHeight ) {
       if( body.classList ) {
         body.classList.add( 'bg-learning' );
         body.classList.remove( 'bg-coding' );
@@ -37,8 +40,10 @@ function fn() {
       } else {
         body.className += 'bg-learning';
       }
+    } else {
+      body.classList.remove( 'bg-learning' );
     }
-    if( document.body.scrollTop - codingOffset.top > 0 ) {
+    if( document.body.scrollTop - codingOffset.top > windowHeight ) {
       if( body.classList ) {
         body.classList.remove( 'bg-learning' );
         body.classList.add( 'bg-coding' );
@@ -48,8 +53,10 @@ function fn() {
       } else {
         body.className += 'bg-coding';
       }
+    } else {
+      body.classList.remove( 'bg-coding' );
     }
-    if( document.body.scrollTop - designOffset.top > 0 ) {
+    if( document.body.scrollTop - designOffset.top > windowHeight ) {
       if( body.classList ) {
         body.classList.remove( 'bg-learning' );
         body.classList.remove( 'bg-coding' );
@@ -59,8 +66,10 @@ function fn() {
       } else {
         body.className += 'bg-design';
       }
+    } else {
+      body.classList.remove( 'bg-design' );
     }
-    if( document.body.scrollTop - lifeOffset.top > 0 ) {
+    if( document.body.scrollTop - lifeOffset.top > windowHeight ) {
       if( body.classList ) {
         body.classList.remove( 'bg-learning' );
         body.classList.remove( 'bg-coding' );
@@ -70,8 +79,10 @@ function fn() {
       } else {
         body.className += 'bg-life';
       }
+    } else {
+      body.classList.remove( 'bg-life' );
     }
-    if( document.body.scrollTop - newyearOffset.top > 0 ) {
+    if( document.body.scrollTop - newyearOffset.top > windowHeight ) {
       if( body.classList ) {
         body.classList.remove( 'bg-learning' );
         body.classList.remove( 'bg-coding' );
@@ -81,6 +92,8 @@ function fn() {
       } else {
         body.className += 'bg-newyear';
       }
+    } else {
+      body.classList.remove( 'bg-newyear' );
     }
   }
 }

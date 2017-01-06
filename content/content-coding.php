@@ -56,19 +56,19 @@
     <!-- <div class="clear"></div> -->
     <div class="row">
       <div class="col-3">
-        <h3 class="article-title">Contributions last year</h3>
-        <p class="large-number">485<span> total</span></p>
+        <h3 class="article-title">Total Contributions</h3>
+        <p class="large-number">485</p>
         <p class="article-description">Jan 1, 2016 - Jan 1, 2017</p>
+      </div>
+      <div class="col-3">
+        <h3 class="article-title">Repositories</h3>
+        <p class="large-number">28</p>
+        <p class="article-description">21 *NEW* repositories</p>
       </div>
       <div class="col-3">
         <h3 class="article-title">Longest streak</h3>
         <p class="large-number">64<span> days</span></p>
         <p class="article-description">March 26 - May 28</p>
-      </div>
-      <div class="col-3">
-        <h3 class="article-title">Current streak</h3>
-        <p class="large-number">0<span> days</span></p>
-        <p class="article-description">Last contributed Dec 31, 2016</p>
       </div>
     </div>
   </article>
