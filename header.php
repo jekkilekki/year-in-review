@@ -15,7 +15,6 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/chart.js"></script>
-    <script src="js/d3-chart.js"></script>
     <title>Year in Review: 2016</title>
 </head>
 <body>

@@ -93,11 +93,11 @@
       <h3 class="article-title">JavaScript Courses</h3>
       <p class="large-number">5</p>
       <p class="article-description"><a href="">2017 will be my year to learn JavaScript deeply!</a>
-        I've already focused on:</p>
+        I've already worked on:</p>
         <ul class="article-description">
-          <li>jQuery</li>
-          <li>React.JS</li>
-          <li>Babble.JS</li>
+          <li>jQuery (obviously)</li>
+          <li>React.js + Babble.js</li>
+          <li>D3.js (these charts)</li>
         </ul>
     </div>
     </div>
