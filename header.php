@@ -22,27 +22,36 @@
       <hgroup>
         <h1 class="page-title">Year in Review</h1>
         <h2 class="page-subtitle">2016</h2>
+        <img src="assets/images/aaron-profile-2016-me-small.jpg">
+        <p>Hi! My name's Aaron Snowberger and I'm an WordPress/PHP web developer
+            who's living in <a href="">Jeonju, South Korea</a>. I teach ESL at <a href="">Jeonju University</a>,
+            Computer Science and Graphic Design at <a href="">GPA International High School</a>,
+            and do <a href="">freelance work</a> with various clients to help them achieve their
+            objectives on the web and in design.
+            <strong>This is a Review of my Year: 2016.</strong>
+        </p>
       </hgroup>
+
       <p class="haiku"></p>
       <nav class="main-navigation">
         <ul>
           <li>2016</li>
-          <li>2015</li>
-          <li>2014</li>
-          <li>2013</li>
-          <li>2012</li>
-          <li>2011</li>
-          <li>2010</li>
-          <li>2009</li>
+          <li class="screen-reader-text">2015</li>
+          <li class="screen-reader-text">2014</li>
+          <li class="screen-reader-text">2013</li>
+          <li class="screen-reader-text">2012</li>
+          <li class="screen-reader-text">2011</li>
+          <li class="screen-reader-text">2010</li>
+          <li class="screen-reader-text">2009</li>
         </ul>
       </nav>
       <ul class="find-me">
-        <li><a href="">Website</a></li>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">Codepen</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter</a></li>
+        <li><a class="screen-reader-text" href="">Website</a></li>
+        <li><a class="screen-reader-text" href="">LinkedIn</a></li>
+        <li><a class="screen-reader-text" href="">GitHub</a></li>
+        <li><a class="screen-reader-text" href="">Codepen</a></li>
+        <li><a class="screen-reader-text" href="">Facebook</a></li>
+        <li><a class="screen-reader-text" href="">Twitter</a></li>
       </ul>
     </header>
     <main>

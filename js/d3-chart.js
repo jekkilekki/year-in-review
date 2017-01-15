@@ -7,14 +7,17 @@ $( '.barchart-area .barchart-bar' ).each( function( index ) {
   dataText.push( $( this ).attr( 'label' ) );
 });
 
-var chart = d3.select( "div.d3-barchart" ).append( "svg" ).attr( "height", "360px" ).attr( "width", "100%" );
+var width = $( '.best-authors' ).innerWidth();
+
+var chart = d3.select( "div.d3-barchart" ).append( "svg" )
+                    .attr( "class", "author-chart" ).attr( "height", "360px" ).attr( "width", "100%" );
 
 chart.selectAll( "rect" )
     .data( dataArray )
     .enter().append( "rect" )
                     .attr( "height", function( d,i ) { return d * 15; } )
-                    .attr( "width", "50" )
-                    .attr( "x", function( d,i ) { return 60 * i; } )
+                    .attr( "width", function(d,i) { return width/dataArray.length-10; } )
+                    .attr( "x", function( d,i ) { return width/dataArray.length * i; } )
                     .attr( "y", function( d,i ) { return 300 -( d * 15 ); } )
                     .attr( "fill", function( d,i ) {
                             if( (100/(i+1)) < 20 ) {
@@ -30,6 +33,6 @@ chart.selectAll( ".bartext" )
                     .attr( "text-anchor", "middle" )
                     .attr( "fill", "white" )
                     .attr( "width", "100" )
-                    .attr( "x", function( d,i ) { return 60 * i; })
+                    .attr( "x", function( d,i ) { return width/dataText.length * i; })
                     .attr( "y", "320" )
                     .text( function(d) { return d; } );

@@ -98,4 +98,4 @@ function fn() {
   }
 }
 
-ready(fn);
+//ready(fn);

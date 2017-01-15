@@ -43,9 +43,9 @@ function get_images( $dir ) {
  * @since   1.0.0
  */
 function extract_csv( $filename, $titles = true, $options = null ) {
-  if ( ! file_exists( $filename ) || ! is_readable( $filename ) ) {
-    return false;
-  } else {
+  if ( ! file_exists( $filename ) ) { echo 'no file'; return false; }
+  else if ( ! is_readable( $filename ) ) { echo 'not readable'; return false; }
+  else {
     // Get passed in options for fgetcsv() OR set defaults
     $options['length'] = ( isset( $options['length'] ) ) ? $options['length'] : 0;
     $options['delimiter'] = ( isset( $options['delimiter'] ) ) ? $options['delimiter'] : ',';
@@ -67,4 +67,10 @@ function extract_csv( $filename, $titles = true, $options = null ) {
       return $rows;
     }
   }
+}
+
+function make_time( $time ) {
+  $hours = floor( $time / 60 );
+  $min = ( $time % 60 ) < 10 ? '0' . $time % 60 : $time % 60;
+  return "$hours<span class='minutes'> : $min</span>";
 }

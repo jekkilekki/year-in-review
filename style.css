@@ -7,6 +7,16 @@
 .clear {
   clear: both;
 }
+.screen-reader-text {
+    /* https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/ */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
 img {
   display: block;
 }
@@ -23,10 +33,25 @@ body {
 }
 section > .row {
   max-width: 1200px;
-  margin: 10rem auto;
+  margin: 20rem auto;
 }
 header {
-  /*background: #39c;*/
+
+}
+header:after {
+    /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+    background: url( 'assets/images/korea-bg.jpg' );
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    margin: 0 -3em;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 .bg-learning {
   background: #91a8d0;;
@@ -68,7 +93,7 @@ h5 {
 h6 {
   font-size: 0.8rem;
 }
-p {
+article p {
   margin-bottom: 1.2rem;
 }
 a {
@@ -141,6 +166,18 @@ header hgroup {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 600px;
+}
+header hgroup p {
+    margin-bottom: 0;
+    text-align: left;
+}
+header img {
+    display: inline;
+    margin: 2em;
+    border-radius: 50%;
+    width: 160px;
+    border: 10px solid rgba(255,255,255,0.2);
 }
 .page-title {
   font-size: 4rem;
@@ -302,7 +339,7 @@ main article {
 }
 
 .book-images {
-  margin: -10rem -3rem 3rem;
+  margin: -20rem -3rem 3rem;
 }
 .book-images article {
   display: flex;

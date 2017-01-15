@@ -1,196 +1,233 @@
 <section id="learning">
-  <div class="row">
-  <aside class="section-aside stick-it">
-    <h1 class="section-title">Learning</h1>
-    <h2 class="section-subtitle">The Year of PHP</h2>
-    <img src="images/aaron-profile-2016-me-small.jpg">
-    <p>
-      Hi! My name's Aaron Snowberger and I'm an WordPress/PHP web developer
-      who's living in Jeonju, South Korea. I teach ESL at <a href="">Jeonju University</a>,
-      Computer Science and Graphic Design at <a href="">GPA International High School</a>,
-      and do freelance work with <a href="">various clients</a> to help them achieve their
-      objectives on the web and in design. This is a Review of my Year: 2016.
-    </p>
-    <p>
-      I'm passionate about making the web a better place for everyone (<a href="">South
-      Korean internet</a> drove me to that passion in the first place).
-      To that end, I strive to create websites and projects that are beautiful,
-      intuitive, and have a great user experience. I work hard to stick to
-      well-established coding standards, use loads of comments, and document
-      everything. With design, I strive to make things that are not only
-      visually pleasing, but also communicate the design objectives effectively
-      to their desired audience.
-    </p>
-    <p>
-      In 2016, I made a number of key decisions that helped propel those visions
-      forward. Two of the biggest were rejoining Lynda.com and
-    </p>
-  </aside>
-  <div class="section-content">
-  <article class="certifications">
-    <h3 class="article-title">Lynda.com Learning Paths Completed</h3>
-    <p>My primary goal for 2016 was: to <a href="">learn PHP deeply.</a> Here are the results.</p>
     <div class="row">
-    <div class="col-2 wp-cert">
-      <a href="https://linkedin.com/in/aaronsnowberger#certification-88629295"><img class="lynda-complete" src="images/lynda-path-complete.png"></a>
-      <p class="article-description"><strong>Become a Junior WordPress Developer</strong>
-        <br>Completion Date: July 2016</p>
-    </div>
-    <div class="col-2 php-cert">
-      <a href="https://linkedin.com/in/aaronsnowberger#certification-1427257103"><img class="lynda-complete" src="images/lynda-path-complete.png"></a>
-      <p class="article-description"><strong>Become a PHP Developer</strong>
-        <br>Completion Date: December 2016</p>
-    </div>
-    </div>
-  </article>
-  <article class="lynda">
-    <h3 class="article-title">Lynda.com Courses Completed</h3>
-    <?php
-    $courses = 71;
-    echo "<p class='huge-number'>$courses</p>";
-    echo "<p>";
-    for( $i = 0; $i < $courses; $i++ ) {
-      echo "<i class='fa fa-graduation-cap'></i> ";
-    }
-    echo "</p>";
-    ?>
-    <ul class="sort-courses">
-      <li>WP Path</li>
-      <li>PHP Path</li>
-      <li>WordPress</li>
-      <li>PHP</li>
-      <li>JavaScript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Graphic Design</li>
-      <li>Other</li>
-    </ul>
-    <div class="course-info">
-      <p>Some course name <span class="course-author">Some author</span> <span class="course-length">1:30</span></p>
-    </div>
-  </article>
-  <article class="lynda-specs">
-    <div class="row">
-    <div class="col-3">
-      <h3 class="article-title">WordPress Courses</h3>
-      <p class="large-number">20</p>
-      <p class="article-description">I've been learning WordPress since 2010:</p>
-      <ul class="article-description">
-        <li>2010: <a href="">1st WordPress site</a></li>
-        <li>2012: 1st WP code mod</li>
-        <li>2014: <a href="">1st plugin on .org</a></li>
-        <li>2016: <a href="">1st theme on .org</a></li>
-      </ul>
-    </div>
-    <div class="col-3">
-      <h3 class="article-title">PHP Courses</h3>
-      <p class="large-number">15</p>
-      <p class="article-description">After a handful of "close but no cigar"
-        WordPress and PHP job interviews, I decided to focus intently on mastering PHP this year.
-        My ultimate goal is <a href="">Zend PHP Certification.</a></p>
-    </div>
-    <div class="col-3">
-      <h3 class="article-title">JavaScript Courses</h3>
-      <p class="large-number">5</p>
-      <p class="article-description"><a href="">2017 will be my year to learn JavaScript deeply!</a>
-        I've already worked on:</p>
-        <ul class="article-description">
-          <li>jQuery (obviously)</li>
-          <li>React.js + Babble.js</li>
-          <li>D3.js (these charts)</li>
-        </ul>
-    </div>
-    </div>
-  </article>
-  <article class="best-authors">
-    <h3 class="article-title">My Favorite Lynda Teachers</h3>
-    <p>This is a list of my favorite Lynda.com teachers in 2016
-      (based on how many courses I took from each).</p>
-    <div class="barchart-container">
-      <div class="barchart-title">
-        <h4 class="article-subtitle">Courses taken per Lynda author</h4>
-        <p>I like these guys.</p>
-      </div>
-      <div class="barchart-content">
-        <div class="barchart-y-axis">
-          <p class="barchart-top-label">20</p>
-          <p class="barchart-bottom-label">0</p>
-        </div>
-        <div class="barchart-area" bar-spacing="50">
-          <div bar-value="18" label="Morten Rand-Hendriksen" class="barchart-bar morten"></div>
-          <div bar-value="7" label="Ray Villalobos" class="barchart-bar ray"></div>
-          <div bar-value="8" label="Kevin Skoglund" class="barchart-bar kevin"></div>
-          <div bar-value="5" label="David Powers" class="barchart-bar david"></div>
-          <div bar-value="3" label="Simon Allardice" class="barchart-bar simon"></div>
-          <div bar-value="5" label="James Williamson" class="barchart-bar james"></div>
-        </div>
-        <div class="barchart-x-axis"></div>
-      </div>
-    </div>
-    <div class="d3-barchart"></div>
-  </article>
-  <article class="new-skills">
-    <h3 class="article-title">Notable New Skills</h3>
-    <p>Beyond my primary focus on PHP and WordPress, I also put together a few small
-      projects utilizing the following cool new bits of web tech:</p>
-    <div class="row spaced-image-row">
-    <div class="col-2 spaced-image-description">
-      <h4 class="article-subtitle">WP REST API</h4>
-      <ul class="article-description">
-        <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
-        <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
-        <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
-        <li>Building an <a href="">Advent calendar</a> using REST and ReactJS</li>
-      </ul>
-    </div>
-    <div class="col-2">
-      <figure>
-        <img src="images/rest-advent.png">
-      </figure>
-    </div>
-    </div>
-    <div class="row spaced-image-row">
-    <div class="col-2">
-      <figure>
-        <img src="images/react-advent.png">
-      </figure>
-    </div>
-    <div class="col-2 spaced-image-description">
-      <h4 class="article-subtitle">React.JS</h4>
-      <ul class="article-description">
-        <li>Created a <a href="">Codepen Collection</a> using React</li>
-        <li>Learned about using <a href="">React with Babble.js</a></li>
-        <li>Built an <a href="">Advent calendar</a> with React Components</li>
-      </ul>
-    </div>
-    </div>
-  </article>
-  <article class="audible">
-    <h3 class="article-title">Books "Read"</h3>
-    <p>I do most of my "reading" via the Audible app on my 1 hour work commute.
-      But this year I also read my first book <em>entirely in Korean:</em> <a href="">Harry Potter
-      and the Sorcerer's Stone.</a></p>
-    <?php
-    // Books Image directory
-    $image_dir = 'images/books';
-    $images = get_images( $image_dir );
 
-    $books = count( $images );
-    echo "<p class='huge-number'>$books</p>";
-    echo "<p>";
-    for( $i = 0; $i < $books; $i++ ) {
-      if( $i == 0 ) {
-        echo "<i class='fa fa-3x fa-book korean-book'></i> ";
-      } else {
-        echo "<i class='fa fa-2x fa-book'></i> ";
-      }
-    }
-    echo "</p>";
-    ?>
-  </article>
-</div><!-- .section-content -->
-</div><!-- .row -->
+    <!-- Learning Intro & Description -->
+    <aside class="section-aside stick-it">
+        <h1 class="section-title">Learning</h1>
+        <h2 class="section-subtitle">The Year of PHP</h2>
+        <p>I'm passionate about making the web a better place for everyone.
+            To that end, I strive to create websites and projects that are beautiful,
+            intuitive, and have a great user experience. I work hard to stick to
+            well-established coding standards, use loads of comments, and document
+            everything. With design, I strive to make things that are not only
+            visually pleasing, but also communicate the design objectives effectively
+            to their desired audience.
+        </p>
+        <p>In 2016, I made a number of key decisions that helped propel those visions
+            forward. Two of the biggest were rejoining Lynda.com and
+        </p>
+    </aside>
+
+    <!-- Learning Section Start -->
+    <div class="section-content">
+
+        <!-- Certifications -->
+        <article class="certifications">
+            <h3 class="article-title">Lynda.com Learning Paths Completed</h3>
+            <p>My primary goal for 2016 was: to <a href="">learn PHP deeply.</a> Here are the results.</p>
+
+            <!-- Badges -->
+            <div class="row badges">
+                <div class="col-2 wp-cert">
+                    <a href="https://linkedin.com/in/aaronsnowberger#certification-88629295">
+                        <img class="lynda-complete" src="assets/images/lynda-path-complete.png">
+                    </a>
+                    <p class="article-description"><strong>Become a Junior WordPress Developer</strong>
+                        <br>Completion Date: July 2016
+                    </p>
+                </div>
+                <div class="col-2 php-cert">
+                    <a href="https://linkedin.com/in/aaronsnowberger#certification-1427257103">
+                        <img class="lynda-complete" src="assets/images/lynda-path-complete.png">
+                    </a>
+                    <p class="article-description"><strong>Become a PHP Developer</strong>
+                        <br>Completion Date: December 2016
+                    </p>
+                </div>
+            </div><!-- .row .badges -->
+        </article><!-- .certifications -->
+
+      <!-- Lynda courses -->
+      <article class="lynda">
+        <h3 class="article-title">Lynda.com Courses Completed</h3>
+
+        <?php
+        /**
+         * Lynda Courses PHP
+         */
+        $courses = extract_csv( 'assets/files/2016_lynda.csv' );
+        $lynda_time = 0;
+        foreach( $courses as $course ) {
+          $course_categories[] = $course['Category'];
+          $lynda_time += $course['Hours']*60 + $course['Minutes'];
+        }
+        //$course_categories = array_keys( $courses, 'Category' );
+        echo '<pre>';
+        var_dump( array_unique( $course_categories ) );
+        echo '</pre>';
+        $num_courses = count( $courses );
+        echo "<p class='huge-number'>$num_courses</p>";
+        echo "<p>";
+        foreach( $courses as $course ) {
+          echo "<i class='fa fa-graduation-cap' data-title='" . $course['Title'] . "'></i> ";
+        }
+        echo "</p>";
+        ?>
+
+        <ul class="sort-courses">
+          <li>WP Path</li>
+          <li>PHP Path</li>
+          <li>WordPress</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Graphic Design</li>
+          <li>Other</li>
+        </ul>
+
+        <div class="course-info">
+          <p>Some course name <span class="course-author">Some author</span> <span class="course-length">1:30</span></p>
+        </div>
+
+      </article><!-- .lynda -->
+
+      <!-- Lynda Specs -->
+      <article class="lynda-specs">
+        <div class="row">
+          <!-- First Third: WordPress Courses -->
+          <div class="col-3">
+            <h3 class="article-title">WordPress Courses</h3>
+            <p class="large-number">20</p>
+            <p class="article-description">I've been learning WordPress since 2010:</p>
+            <ul class="article-description">
+              <li>2010: <a href="">1st WordPress site</a></li>
+              <li>2012: 1st WP code mod</li>
+              <li>2014: <a href="">1st plugin on .org</a></li>
+              <li>2016: <a href="">1st theme on .org</a></li>
+            </ul>
+          </div>
+          <!-- Second Third: PHP Courses -->
+          <div class="col-3">
+            <h3 class="article-title">PHP Courses</h3>
+            <p class="large-number">15</p>
+            <p class="article-description">After a handful of "close but no cigar"
+              WordPress and PHP job interviews, I decided to focus intently on mastering PHP this year.
+              My ultimate goal is <a href="">Zend PHP Certification.</a></p>
+          </div>
+          <!-- Third Third: JavaScript Courses -->
+          <div class="col-3">
+            <h3 class="article-title">JavaScript Courses</h3>
+            <p class="large-number">5</p>
+            <p class="article-description"><a href="">2017 will be my year to learn JavaScript deeply!</a>
+              I've already worked on:</p>
+              <ul class="article-description">
+                <li>jQuery (obviously)</li>
+                <li>React.js + Babble.js</li>
+                <li>D3.js (these charts)</li>
+              </ul>
+          </div>
+        </div><!-- .row -->
+      </article><!-- .lynda-specs -->
+
+      <!-- Best Lynda Authors -->
+      <article class="best-authors">
+        <h3 class="article-title">My Favorite Lynda Teachers</h3>
+        <p>This is a list of my favorite Lynda.com teachers in 2016
+          (based on how many courses I took from each).</p>
+        <div class="barchart-container">
+          <div class="barchart-title">
+            <h4 class="article-subtitle">Courses taken per Lynda author</h4>
+            <p>I like these guys.</p>
+          </div>
+          <div class="barchart-content">
+
+            <div class="barchart-area" bar-spacing="50">
+              <div bar-value="18" label="Morten Rand-Hendriksen" class="barchart-bar morten"></div>
+              <div bar-value="7" label="Ray Villalobos" class="barchart-bar ray"></div>
+              <div bar-value="8" label="Kevin Skoglund" class="barchart-bar kevin"></div>
+              <div bar-value="5" label="David Powers" class="barchart-bar david"></div>
+              <div bar-value="3" label="Simon Allardice" class="barchart-bar simon"></div>
+              <div bar-value="5" label="James Williamson" class="barchart-bar james"></div>
+            </div>
+            <!-- <div class="barchart-x-axis"></div> -->
+          </div>
+        </div>
+        <div class="d3-barchart"></div>
+      </article><!-- .best-authors -->
+
+      <!-- New Skills -->
+      <article class="new-skills">
+        <h3 class="article-title">Notable New Skills</h3>
+        <p>Beyond my primary focus on PHP and WordPress, I also put together a few small
+          projects utilizing the following cool new bits of web tech:</p>
+        <div class="row spaced-image-row">
+        <div class="col-2 spaced-image-description">
+          <h4 class="article-subtitle">WP REST API</h4>
+          <ul class="article-description">
+            <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
+            <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
+            <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
+            <li>Building an <a href="">Advent calendar</a> using REST and ReactJS</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <figure>
+            <img src="assets/images/rest-advent.png">
+          </figure>
+        </div>
+        </div>
+        <div class="row spaced-image-row">
+        <div class="col-2">
+          <figure>
+            <img src="assets/images/react-advent.png">
+          </figure>
+        </div>
+        <div class="col-2 spaced-image-description">
+          <h4 class="article-subtitle">React.JS</h4>
+          <ul class="article-description">
+            <li>Created a <a href="">Codepen Collection</a> using React</li>
+            <li>Learned about using <a href="">React with Babble.js</a></li>
+            <li>Built an <a href="">Advent calendar</a> with React Components</li>
+          </ul>
+        </div>
+        </div>
+      </article><!-- .new-skills -->
+
+      <!-- Audible -->
+      <article class="audible">
+        <h3 class="article-title">Books "Read"</h3>
+        <p>I do most of my "reading" via the Audible app on my 1 hour work commute.
+          But this year I also read my first book <em>entirely in Korean:</em> <a href="">Harry Potter
+          and the Sorcerer's Stone.</a></p>
+        <?php
+        // Books Image directory
+        $image_dir = 'assets/images/books';
+        $images = get_images( $image_dir );
+
+        $books = extract_csv( 'assets/files/2016-books.csv' );
+        $num_books = count( $books );
+        $books_time = 0;
+
+        echo "<p class='huge-number'>$num_books</p>";
+        echo "<p>";
+        $i = 0;
+        foreach( $books as $book ) {
+          if( $i == 0 ) {
+            echo "<i class='fa fa-3x fa-book korean-book'></i> ";
+          } else {
+            echo "<i class='fa fa-2x fa-book'></i> ";
+          }
+          $books_time += $book['Hours']*60 + $book['Minutes'];
+          $i++;
+        }
+        echo "</p>";
+        ?>
+      </article><!-- .audible -->
+    </div><!-- .section-content -->
+  </div><!-- .row -->
 </section>
+
 <section class="book-images">
   <article>
     <?php
@@ -253,12 +290,12 @@
     <div class="row">
       <div class="col-2">
         <h3 class="article-title">Lynda.com Courses</h3>
-        <p class="large-number">185<span> hours</span></p>
+        <p class="large-number"><?php echo make_time( $lynda_time ); ?></p>
         <p class="article-description">That's 4.6 work weeks!</p>
       </div>
       <div class="col-2">
         <h3 class="article-title">Audiobooks</h3>
-        <p class="large-number">185<span> hours</span></p>
+        <p class="large-number"><?php echo make_time( $books_time ); ?></p>
         <p class="article-description">That's excluding the time it took to read Harry Potter in Korean!</p>
       </div>
     </div>
