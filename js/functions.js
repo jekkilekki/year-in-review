@@ -99,3 +99,48 @@ function fn() {
 }
 
 //ready(fn);
+
+/**
+ * jQuery Stuff
+ */
+$( document ).ready( function() {
+
+    /**
+     * Social Navigation Menu
+     */
+    $( '.find-me' ).on( 'click mouseout mouseover', function() {
+        if( $( '.open-social' ).hasClass( 'active' ) ) {
+            $( '.open-social' ).removeClass( 'active' );
+            $( '.social-menu' ).removeClass( 'active' );
+        } else {
+            $( '.open-social' ).addClass( 'active' );
+            $( '.social-menu' ).addClass( 'active' );
+        }
+
+    });
+
+    /**
+     * Lynda Course Individual Categories
+     */
+    $( '.course' ).on( 'click', function() {
+        var id = $(this).attr( 'data-id' );
+        $( '.course' ).removeClass( 'active' );
+        $( this ).addClass( 'active' );
+        $( '.course-info' ).css( 'visibility', 'visible' );
+        $( '.course-info p' ).css( 'display', 'none' );
+        $( '.course-' + id ).css( 'display', 'block' );
+    });
+
+    /**
+     * Lynda Course Category List
+     */
+    $( '.sort-courses li' ).on( 'click', function() {
+        var category = $(this).text().split( " " )[0];
+        $( '.sort-courses li' ).removeClass( 'active' );
+        $( this ).addClass( 'active' );
+        $( '.course-info' ).css( 'visibility', 'hidden' );
+        $( '.course-info p' ).css( 'display', 'none' );
+        $( '.lynda i' ).removeClass( 'active' );
+        $( '.lynda i.' + category ).addClass( 'active' );
+    });
+});

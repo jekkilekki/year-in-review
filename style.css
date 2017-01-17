@@ -161,16 +161,24 @@ header {
   text-align: center;
   min-height: 100vh;
 }
-header hgroup {
+header .intro {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
 }
-header hgroup p {
+header p {
     margin-bottom: 0;
     text-align: left;
+}
+header p.haiku {
+    font-style: oblique;
+    text-align: center;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX( -50% );
 }
 header img {
     display: inline;
@@ -186,6 +194,11 @@ header img {
   font-size: 1.6rem;
   font-weight: 100;
 }
+/*
+ * -----------------------------------------
+ * Navigation
+ * =========================================
+ */
 .main-navigation {
   position: fixed;
   z-index: 2;
@@ -205,12 +218,75 @@ header img {
   display: inline-block;
   padding: 12px;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 .find-me {
-  list-style: none;
   position: fixed;
   right: 0;
   top: 60px;
+  z-index: 10;
+  cursor: pointer;
 }
+.find-me,
+.find-me ul {
+    list-style: none;
+}
+.find-me li {
+    padding: 0.75em 0.75em 0.3em;
+    /*background: rgba(255,255,255,0.5);*/
+    background: white;
+    color: #39c;
+}
+.find-me a {
+    text-decoration: none;
+    border: none;
+    color: #39c;
+}
+.find-me a:hover,
+.find-me a:focus,
+.find-me a:active {
+    color: black;
+}
+.find-me .icon {
+    font-size: 1.5rem;
+}
+.find-me li.open-social {
+    background: rgba(255,255,255,0.5);
+}
+.find-me li.open-social:hover,
+.find-me li.open-social:active,
+.find-me li.open-social:focus,
+.find-me li.open-social.active {
+    background: rgba( 12, 12, 125, 0.5 );
+    color: white;
+}
+.social-menu {
+    transition: all 0.5s ease;
+    right: -50px;
+}
+.social-menu.active {
+    right: 0;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+/*
+ * -----------------------------------------
+ * Sections
+ * =========================================
+ */
 .section-title {
   margin-top: -1.75rem;
   margin-bottom: 0.5rem;
@@ -266,9 +342,28 @@ main article {
 }
 .fa:hover,
 .fa:active,
-.fa:focus {
+.fa:focus,
+.fa.active {
   cursor: pointer;
   color: black;
+}
+.lynda .fa-stack-2x {
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 50%;
+    font-size: 200%;
+    color: #008bcb;
+}
+.lynda .fa-stack-1x {
+    font-size: 100%;
+    color: white;
+}
+.lynda .view-cert {
+    border-bottom: none;
+    position: absolute;
+    right: -0.5em;
+    top: 0;
 }
 .huge-number {
   font-size: 5rem;
@@ -294,11 +389,23 @@ main article {
   border-radius: 10px;
   padding: 1em 2em;
   margin-bottom: 2em;
+  margin-top: 1em;
   color: black;
 }
 .course-info p {
   margin-bottom: 0;
   font-style: oblique;
+  display: none;
+  padding-right: 3em;
+}
+.course-info a {
+    font-weight: 100;
+    color: black;
+    border-color: black;
+}
+.course-length {
+    color: rgba(255,255,255,0.75);
+    font-weight: 100;
 }
 
 .certifications .row {
@@ -328,6 +435,7 @@ main article {
   border-radius: 10px;
   margin: 0 0.1rem 0.5rem;
   display: inline-block;
+  cursor: pointer;
 }
 
 .github-calendar-full {

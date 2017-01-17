@@ -55,39 +55,60 @@
         /**
          * Lynda Courses PHP
          */
+        // Retrieve all our Courses from CSV as an Associative Array
         $courses = extract_csv( 'assets/files/2016_lynda.csv' );
+
+        // Calculate total time spent (in minutes) viewing these courses
         $lynda_time = 0;
         foreach( $courses as $course ) {
-          $course_categories[] = $course['Category'];
           $lynda_time += $course['Hours']*60 + $course['Minutes'];
         }
-        //$course_categories = array_keys( $courses, 'Category' );
-        echo '<pre>';
-        var_dump( array_unique( $course_categories ) );
-        echo '</pre>';
-        $num_courses = count( $courses );
+
+        // Sort Courses by Course Category
+        $sorted = array_orderby( $courses, 'Category', SORT_DESC, 'Month', SORT_ASC );
+        // Count the number of Courses in each Category
+        $num_categories = assc_array_count_values( $sorted, 'Category' );
+        // Now, simplify the count by giving assigning "Other" to anything with fewer than 3 courses
+        $simple_cats = simplify_category_count( $num_categories );
+
+        // Create an associative array of sub arrays for each Category
+        // $full_list = sub_array_ify( $sorted, $sorted['Category'], $simple_cats );
+
+        // Display total number of courses and a graduation cap icon to represent each
+        $num_courses = count( $sorted );
         echo "<p class='huge-number'>$num_courses</p>";
         echo "<p>";
-        foreach( $courses as $course ) {
-          echo "<i class='fa fa-graduation-cap' data-title='" . $course['Title'] . "'></i> ";
+        $i = 0;
+        foreach( $sorted as $course ) {
+            $other_cat = ! array_key_exists( $course['Category'], $simple_cats ) ? 'Other' : '';
+            echo "<i data-id='" . ++$i . "' class='fa fa-graduation-cap course " . $course['Category'] . ' ' . $other_cat . "' data-title='" . $course['Title'] . "' data-category='" . $course['Category'] . "'></i> ";
         }
         echo "</p>";
         ?>
 
         <ul class="sort-courses">
-          <li>WP Path</li>
-          <li>PHP Path</li>
-          <li>WordPress</li>
-          <li>PHP</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Graphic Design</li>
-          <li>Other</li>
+            <?php
+            $other = 0;
+            foreach( $simple_cats as $category => $num ) {
+                echo "<li>$category <span>( $num )</span></li>";
+            }
+            ?>
         </ul>
 
         <div class="course-info">
-          <p>Some course name <span class="course-author">Some author</span> <span class="course-length">1:30</span></p>
+            <?php $i = 0; foreach( $sorted as $course ) { ?>
+                <p class="course-<?php echo ++$i; ?>">
+                    <a href="<?php echo $course['Course Link']; ?>"><?php echo $course['Title']; ?></a>
+                    <br><span class="course-author"><?php echo $course['Author']; ?></span>
+                    <span class="course-length"><?php echo ' (' . make_time( $course['Hours']*60 + $course['Minutes'] ) . ')'; ?></span>
+                    <a class="view-cert" href="<?php echo $course['Certificate']; ?>">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-certificate fa-stack-2x"></i>
+                            <i class="fa fa-star fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </p>
+            <?php } ?>
         </div>
 
       </article><!-- .lynda -->
@@ -98,7 +119,7 @@
           <!-- First Third: WordPress Courses -->
           <div class="col-3">
             <h3 class="article-title">WordPress Courses</h3>
-            <p class="large-number">20</p>
+            <p class="large-number"><?php echo $num_categories['WordPress']; ?></p>
             <p class="article-description">I've been learning WordPress since 2010:</p>
             <ul class="article-description">
               <li>2010: <a href="">1st WordPress site</a></li>
@@ -110,7 +131,7 @@
           <!-- Second Third: PHP Courses -->
           <div class="col-3">
             <h3 class="article-title">PHP Courses</h3>
-            <p class="large-number">15</p>
+            <p class="large-number"><?php echo $num_categories['PHP']; ?></p>
             <p class="article-description">After a handful of "close but no cigar"
               WordPress and PHP job interviews, I decided to focus intently on mastering PHP this year.
               My ultimate goal is <a href="">Zend PHP Certification.</a></p>
@@ -118,7 +139,7 @@
           <!-- Third Third: JavaScript Courses -->
           <div class="col-3">
             <h3 class="article-title">JavaScript Courses</h3>
-            <p class="large-number">5</p>
+            <p class="large-number"><?php echo $num_categories['JavaScript']; ?></p>
             <p class="article-description"><a href="">2017 will be my year to learn JavaScript deeply!</a>
               I've already worked on:</p>
               <ul class="article-description">

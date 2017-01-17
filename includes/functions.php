@@ -72,5 +72,59 @@ function extract_csv( $filename, $titles = true, $options = null ) {
 function make_time( $time ) {
   $hours = floor( $time / 60 );
   $min = ( $time % 60 ) < 10 ? '0' . $time % 60 : $time % 60;
-  return "$hours<span class='minutes'> : $min</span>";
+  return "$hours<span class='minutes'>:$min</span>";
+}
+
+function array_orderby() {
+    $args = func_get_args();
+    $data = array_shift( $args );
+    foreach( $args as $n => $field ) {
+        if( is_string( $field ) ) {
+            $tmp = array();
+            foreach( $data as $key => $row ) {
+                $tmp[$key] = $row[$field];
+            }
+            $args[$n] = $tmp;
+        }
+    }
+    $args[] = &$data;
+    call_user_func_array( 'array_multisort', $args );
+    return array_pop( $args );
+}
+
+/**
+ * Associative Array Count Values
+ *
+ * Returns an array containing the number of values for a given $key in a given associative $array
+ *
+ * @param   array   $array  The associative array to count values for
+ * @param   String  $key    The key to count values for
+ * @return  array           A new array containing the counted values for the key in the original associative array
+ */
+function assc_array_count_values( $array, $key ) {
+    foreach( $array as $row ) {
+        $new_array[] = $row[$key];
+    }
+    return array_count_values( $new_array );
+}
+
+function simplify_category_count( $array ) {
+
+    $simplified = array();
+    $other = 0;
+    foreach( $array as $category => $num ) {
+        if ( $num < 3 ) {
+            $other++;
+        } else {
+            $simplified[$category] = $num;
+        }
+    }
+    $simplified['Other'] = $other;
+
+    return $simplified;
+}
+
+
+function sub_array_ify( $associative_array, $key, $category_array ) {
+
 }

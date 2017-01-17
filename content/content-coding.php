@@ -46,7 +46,7 @@
   <article class="wp-contributions">
     <h3 class="article-title">Contributions to GitHub</h3>
     <!-- <p>485 contributions in the last year</p> -->
-    <img class="github-calendar-full" src="images/github-contrib-2016-color.png" alt="Jekkilekki's Github chart" />
+    <img class="github-calendar-full" src="assets/images/github-contrib-2016-color.png" alt="Jekkilekki's Github chart" />
     <!-- <img class="github-calendar-full" src="http://ghchart.rshah.org/2a4170/jekkilekki" alt="2016rshah's Github chart" /> -->
     <!-- Prepare a container for your calendar. -->
     <!-- <div class="github-calendar"> -->
