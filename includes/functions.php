@@ -69,10 +69,53 @@ function extract_csv( $filename, $titles = true, $options = null ) {
   }
 }
 
-function make_time( $time ) {
+function make_time( $time, $full = false, $oneline = false ) {
   $hours = floor( $time / 60 );
-  $min = ( $time % 60 ) < 10 ? '0' . $time % 60 : $time % 60;
-  return "$hours<span class='minutes'>:$min</span>";
+  $min = (( $time % 60 ) < 10 && !$full) ? '0' . $time % 60 : $time % 60;
+  $time_str = "$hours<span class='minutes'>:$min</span>";
+
+  if( $full ) {
+
+      if( $oneline ) { $break_str = ' '; }
+      else { $break_str = '<br>'; }
+
+      $days = 0; $weeks = 0; $months = 0;
+      $time_str = "";
+      if( $hours > 24 ) {
+          $days = floor( $hours / 24 );
+          $hours = ( $hours % 24 ) < 10 ? '0' . $hours % 24 : $hours % 24;
+
+          $time_str  = get_time_string( $days, 'day' ) . $break_str;
+          $time_str .= get_time_string( $hours, 'hour' ) . $break_str;
+          $time_str .= get_time_string( $min, 'min' );
+      }
+      if( $days > 7 ) {
+          $weeks = floor( $days / 7 );
+          $days = $days % 7;
+
+          $time_str  = get_time_string( $weeks, 'week' ) . $break_str;
+          $time_str .= get_time_string( $days, 'day' ) . $break_str;
+          $time_str .= get_time_string( $hours, 'hour' ) . $break_str;
+          $time_str .= get_time_string( $min, 'min' );
+      }
+      if( $weeks > 4 ) {
+          $months = floor( $weeks / 4 );
+          $weeks = $weeks % 4;
+
+          $time_str  = get_time_string( $months, 'month' ) . $break_str;
+          $time_str .= get_time_string( $weeks, 'week' ) . $break_str;
+          $time_str .= get_time_string( $days, 'day' ) . $break_str;
+          $time_str .= get_time_string( $hours, 'hour' ) . $break_str;
+          $time_str .= get_time_string( $min, 'min' );
+      }
+  }
+  return $time_str;
+}
+
+function get_time_string( $var, $str ) {
+    if( $var == 0 ) return;
+    else if( $var == 1 ) return "$var<span> $str</span>";
+    else return "$var<span> $str" . "s" . "</span>";
 }
 
 function array_orderby() {

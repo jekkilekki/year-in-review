@@ -14,7 +14,9 @@
             to their desired audience.
         </p>
         <p>In 2016, I made a number of key decisions that helped propel those visions
-            forward. Two of the biggest were rejoining Lynda.com and
+            forward. Two of the biggest were rejoining Lynda.com and starting to
+            put in job applications for a WordPress development position. Both of
+            these challenged me to push myself beyond my perceived limitations.
         </p>
     </aside>
 
@@ -132,18 +134,23 @@
           <div class="col-3">
             <h3 class="article-title">PHP Courses</h3>
             <p class="large-number"><?php echo $num_categories['PHP']; ?></p>
-            <p class="article-description">After a handful of "close but no cigar"
-              WordPress and PHP job interviews, I decided to focus intently on mastering PHP this year.
-              My ultimate goal is <a href="">Zend PHP Certification.</a></p>
+            <p class="article-description">Although I've been tinkering with WordPress and
+                customizing code for a while, this year I decided to really hunker down
+                and focus on <em>mastering</em> PHP.
+            </p>
+            <p class="article-description">
+              My ultimate goal is <a href="">Zend PHP Certification.</a>
+            </p>
           </div>
           <!-- Third Third: JavaScript Courses -->
           <div class="col-3">
             <h3 class="article-title">JavaScript Courses</h3>
             <p class="large-number"><?php echo $num_categories['JavaScript']; ?></p>
             <p class="article-description"><a href="">2017 will be my year to learn JavaScript deeply!</a>
-              I've already worked on:</p>
+              I've already worked on:
+            </p>
               <ul class="article-description">
-                <li>jQuery (obviously)</li>
+                <li>jQuery + "vanilla" JS</li>
                 <li>React.js + Babble.js</li>
                 <li>D3.js (these charts)</li>
               </ul>
@@ -155,63 +162,134 @@
       <article class="best-authors">
         <h3 class="article-title">My Favorite Lynda Teachers</h3>
         <p>This is a list of my favorite Lynda.com teachers in 2016
-          (based on how many courses I took from each).</p>
+          (based on how many of their courses I watched).</p>
         <div class="barchart-container">
           <div class="barchart-title">
             <h4 class="article-subtitle">Courses taken per Lynda author</h4>
-            <p>I like these guys.</p>
           </div>
-          <div class="barchart-content">
-
-            <div class="barchart-area" bar-spacing="50">
-              <div bar-value="18" label="Morten Rand-Hendriksen" class="barchart-bar morten"></div>
-              <div bar-value="7" label="Ray Villalobos" class="barchart-bar ray"></div>
-              <div bar-value="8" label="Kevin Skoglund" class="barchart-bar kevin"></div>
-              <div bar-value="5" label="David Powers" class="barchart-bar david"></div>
-              <div bar-value="3" label="Simon Allardice" class="barchart-bar simon"></div>
-              <div bar-value="5" label="James Williamson" class="barchart-bar james"></div>
-            </div>
-            <!-- <div class="barchart-x-axis"></div> -->
-          </div>
+          <div class="d3-barchart"></div>
+          <ul class="lynda-imgs">
+              <li>
+                  <a href=""><img src="assets/images/lynda_morten_thumb.jpg"></a>
+              </li>
+              <li>
+                  <a href=""><img src="assets/images/lynda_ray_thumb.jpg"></a>
+              </li>
+              <li>
+                  <a href=""><img src="assets/images/lynda_kevin_thumb.jpg"></a>
+              </li>
+              <li>
+                  <a href=""><img src="assets/images/lynda_david_thumb.jpg"></a>
+              </li>
+              <li>
+                  <a href=""><img src="assets/images/lynda_simon_thumb.jpg"></a>
+              </li>
+              <li>
+                  <a href=""><img src="assets/images/lynda_james_thumb.jpg"></a>
+              </li>
+          </ul>
         </div>
-        <div class="d3-barchart"></div>
       </article><!-- .best-authors -->
 
       <!-- New Skills -->
       <article class="new-skills">
         <h3 class="article-title">Notable New Skills</h3>
         <p>Beyond my primary focus on PHP and WordPress, I also put together a few small
-          projects utilizing the following cool new bits of web tech:</p>
+          projects utilizing the following cool new (to me) bits of web tech:</p>
         <div class="row spaced-image-row">
-        <div class="col-2 spaced-image-description">
-          <h4 class="article-subtitle">WP REST API</h4>
-          <ul class="article-description">
-            <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
-            <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
-            <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
-            <li>Building an <a href="">Advent calendar</a> using REST and ReactJS</li>
-          </ul>
-        </div>
-        <div class="col-2">
-          <figure>
-            <img src="assets/images/rest-advent.png">
-          </figure>
-        </div>
+            <div class="col-2 spaced-image-description">
+              <h4 class="article-subtitle">WP REST API</h4>
+              <ul class="article-description">
+                <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
+                <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
+                <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
+                <li>Build<em>ing</em> an <a href="">Advent calendar</a> using REST and ReactJS</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <figure>
+                <img src="assets/images/react-advent2.png">
+              </figure>
+            </div>
         </div>
         <div class="row spaced-image-row">
-        <div class="col-2">
-          <figure>
-            <img src="assets/images/react-advent.png">
-          </figure>
+            <div class="col-2">
+              <figure>
+                <img src="assets/images/react-advent.png">
+              </figure>
+            </div>
+            <div class="col-2 spaced-image-description">
+              <h4 class="article-subtitle">React.js</h4>
+              <ul class="article-description">
+                <li>Created a <a href="">Codepen Collection</a> using React</li>
+                <li>Learned about using <a href="">React with Babble.js</a></li>
+                <li>Built an <a href="">Advent calendar</a> with React Components</li>
+              </ul>
+            </div>
         </div>
-        <div class="col-2 spaced-image-description">
-          <h4 class="article-subtitle">React.JS</h4>
-          <ul class="article-description">
-            <li>Created a <a href="">Codepen Collection</a> using React</li>
-            <li>Learned about using <a href="">React with Babble.js</a></li>
-            <li>Built an <a href="">Advent calendar</a> with React Components</li>
-          </ul>
+        <div class="row spaced-image-row">
+            <div class="col-2 spaced-image-description">
+              <h4 class="article-subtitle">D3.js Charts</h4>
+              <ul class="article-description">
+                <li>Worked on numerous <a href="">Codepens</a> that utilize D3</li>
+                <li>Coded <a href="">some Gists</a> to run on bl.ocks.org and tributary.io</li>
+                <li>Created the D3 charts on this site
+                    <ul>
+                        <li>"Lynda.com Authors" bar chart</li>
+                        <li>"Life Categories" tree chart</li>
+                        <li>"Books Read" pie chart</li>
+                        <li>"Life Satisfaction" radar chart</li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+                <div id="d3-tree"></div>
+                <!-- <div class="jq-piechart">
+                  <div class="common-chart chart-border"></div>
+                  <div class="common-chart chart-base"></div>
+                  <div class="common-chart chart-center"></div>
+                  <div class="common-chart chart-slice slice_1_c">
+                    <div class="common-chart chart-slice slice_1_w"></div>
+                  </div>
+                  <div class="common-chart chart-slice slice_2_c">
+                    <div class="common-chart chart-slice slice_2_w"></div>
+                  </div>
+                  <div class="common-chart chart-slice slice_3_c">
+                    <div class="common-chart chart-slice slice_3_w"></div>
+                  </div>
+                  <div class="common-chart chart-slice slice_4_c">
+                    <div class="common-chart chart-slice slice_4_w"></div>
+                  </div>
+                  <div class="common-chart chart-slice slice_5_c">
+                    <div class="common-chart chart-slice slice_5_w"></div>
+                  </div>
+                  <p class="chart-label slice_1_label">12 Business</p>
+                  <p class="chart-label slice_2_label">6 Personal Development</p>
+                  <p class="chart-label slice_3_label">4 Biography</p>
+                  <p class="chart-label slice_4_label">3 Psychology</p>
+                  <p class="chart-label slice_5_label">2 Fiction</p>
+                </div> -->
+            </div>
         </div>
+        <div class="row spaced-image-row">
+            <div class="col-2">
+              <figure>
+                  <a class="svg-demo" href="">
+                  <?php include( 'content-svg.php' ); ?>
+                  </a>
+                  <!-- <img src="assets/images/code-svg.png"> -->
+                <!-- <svg class="sqirl-svg"><use xlink:href="assets/images/symbol-defs.svg#sqirl-svg"></use></svg> -->
+              </figure>
+            </div>
+            <div class="col-2 spaced-image-description">
+              <h4 class="article-subtitle">SVG Icon Injection</h4>
+              <ul class="article-description">
+                <li>One project I built used <code>svgeezy.js</code> and <code>svg-injector.js</code> to inject SVG code into the specified <code>&lt;img&gt;</code> tags.</li>
+                <li>The client of that project also wanted animation, so I animated the SVGs directly in the code with <code>&lt;animateTransform/&gt;</code> tags.</li>
+                <li>This "Year in Review" site uses <code>svgxuse.js</code> to inject SVG code in a slightly different way using XML <code>&lt;use&gt;</code> tags.</li>
+              </ul>
+            </div>
         </div>
       </article><!-- .new-skills -->
 
@@ -254,22 +332,34 @@
     <?php
       for( $i = 0; $i < count( $images ); $i++ ) {
         echo '<figure>';
-        echo '<img src="' . $images[$i] . '">';
+        echo '<img ';
+            if( $i == 5 || $i == 6 || $i == 14 || $i == 20 || $i == 23 || $i == 25 ) {
+                echo 'class="best-book" ';
+            }
+        echo 'src="' . $images[$i] . '">';
         echo '</figure>';
       }
     ?>
   </article>
 </section>
+
 <section class="totals">
   <div class="row">
+      <aside class="section-aside">
+      </aside>
     <div class="section-content">
       <article class="book-categories">
         <h3 class="article-title">My Favorite Books</h3>
-        <p>The books I choose to read or listen to typically all fall into the same types of categories.</p>
+        <p>
+            The books I choose to read or listen to typically fall into the same types of categories:
+            Business, Personal Development, and Psychology. But this year, I started getting into
+            Biographies for the first time, and added in a few Fiction books as well (for the first
+            time in years).
+        </p>
         <div class="row">
           <div class="col-2">
-            <div class="piechart">
-              <div class="common-chart chart-border"></div>
+            <div id="piechart" class="piechart">
+              <!-- <div class="common-chart chart-border"></div>
               <div class="common-chart chart-base"></div>
               <div class="common-chart chart-center"></div>
               <div class="common-chart chart-slice slice_1_c">
@@ -291,18 +381,18 @@
               <p class="chart-label slice_2_label">6 Personal Development</p>
               <p class="chart-label slice_3_label">4 Biography</p>
               <p class="chart-label slice_4_label">3 Psychology</p>
-              <p class="chart-label slice_5_label">2 Fiction</p>
+              <p class="chart-label slice_5_label">2 Fiction</p> -->
             </div>
           </div>
           <div class="col-2">
             <h4 class="article-subtitle">The Best Books in 2016</h4>
             <ul class="article-description">
-              <li>Level Up Your Life</li>
-              <li>So Good They Can't Ignore You</li>
-              <li>Creativity, Inc.</li>
-              <li>A Thousand Miles to Freedom</li>
-              <li>Ready Player One</li>
-              <li>Born a Crime</li>
+              <li><a href="">Level Up Your Life</a></li>
+              <li><a href="">So Good They Can't Ignore You</a> <span class="list-note">(which has become my life mantra)</span></li>
+              <li><a href="">Creativity, Inc.</a></li>
+              <li><a href="">A Thousand Miles to Freedom</a></li>
+              <li><a href="">Ready Player One</a></li>
+              <li><a href="">Born a Crime</a></li>
             </ul>
           </div>
         </div>
@@ -310,16 +400,25 @@
   <article class="time-spent">
     <div class="row">
       <div class="col-2">
-        <h3 class="article-title">Lynda.com Courses</h3>
+        <h3 class="article-title">Lynda.com Time</h3>
         <p class="large-number"><?php echo make_time( $lynda_time ); ?></p>
-        <p class="article-description">That's 4.6 work weeks!</p>
+        <p class="article-description">That's <?php echo make_time( $lynda_time, true, true ); ?>!</p>
       </div>
       <div class="col-2">
-        <h3 class="article-title">Audiobooks</h3>
+        <h3 class="article-title">Audiobooks Time</h3>
         <p class="large-number"><?php echo make_time( $books_time ); ?></p>
-        <p class="article-description">That's excluding the time it took to read Harry Potter in Korean!</p>
+        <p class="article-description">That's <?php echo make_time( $books_time, true, true ); ?>!</p>
       </div>
     </div>
+  </article>
+  <article class="total-time">
+      <h3 class="article-title">Total Learning Time</h3>
+      <p class="huge-number">
+          <?php
+          $total_time = $lynda_time + $books_time;
+          echo make_time( $total_time, true );
+          ?>
+      </p>
   </article>
   </div>
 </div><!-- .row -->

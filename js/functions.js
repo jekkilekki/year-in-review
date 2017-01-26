@@ -105,6 +105,9 @@ function fn() {
  */
 $( document ).ready( function() {
 
+    $( 'i.WordPress' ).addClass( 'active' );
+    $( '.sort-courses li:first-child' ).addClass( 'active' );
+
     /**
      * Social Navigation Menu
      */
@@ -124,8 +127,12 @@ $( document ).ready( function() {
      */
     $( '.course' ).on( 'click', function() {
         var id = $(this).attr( 'data-id' );
-        $( '.course' ).removeClass( 'active' );
+        if( ! $( this ).hasClass( 'highlight' ) ) {
+            $( '.course' ).removeClass( 'active' );
+        }
         $( this ).addClass( 'active' );
+        $( '.course' ).css( 'textShadow', 'none' );
+        $( this ).css( 'textShadow', '0px 0px 10px steelblue' );
         $( '.course-info' ).css( 'visibility', 'visible' );
         $( '.course-info p' ).css( 'display', 'none' );
         $( '.course-' + id ).css( 'display', 'block' );
@@ -138,9 +145,10 @@ $( document ).ready( function() {
         var category = $(this).text().split( " " )[0];
         $( '.sort-courses li' ).removeClass( 'active' );
         $( this ).addClass( 'active' );
+        $( '.course' ).css( 'textShadow', 'none' );
         $( '.course-info' ).css( 'visibility', 'hidden' );
         $( '.course-info p' ).css( 'display', 'none' );
         $( '.lynda i' ).removeClass( 'active' );
-        $( '.lynda i.' + category ).addClass( 'active' );
+        $( '.lynda i.' + category ).addClass( 'active highlight' );
     });
 });

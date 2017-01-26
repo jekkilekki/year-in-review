@@ -22,7 +22,7 @@ img {
 }
 body {
   transition: background 0.5s ease;
-  background: #39c;
+  background: #44a8d8;
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   font-weight: inherit;
@@ -40,7 +40,7 @@ header {
 }
 header:after {
     /* https://css-tricks.com/snippets/css/transparent-background-images/ */
-    background: url( 'assets/images/korea-bg.jpg' );
+    background: url( '../assets/images/korea-bg.jpg' );
     background-size: cover;
     background-attachment: fixed;
     content: "";
@@ -54,7 +54,7 @@ header:after {
     z-index: -1;
 }
 .bg-learning {
-  background: #91a8d0;;
+  background: #91a8d0;
 }
 .bg-coding {
   background: #9a0;
@@ -71,6 +71,52 @@ header:after {
 footer {
   background: #93c;
 }
+
+strong {
+    font-weight: 500;
+}
+
+/**
+ * D3 Category20 Colors
+ */
+.d3-cat1 { background: #1f77b4; color: white; }
+.d3-cat2 { background: #aec7d8; color: black; }
+.d3-cat3 { background: #ff7f0e; color: white; }
+.d3-cat4 { background: #ffbb78; color: black; }
+.d3-cat5 { background: #2ca02c; color: white; }
+.d3-cat6 { background: #98df8a; color: black; }
+.d3-cat7 { background: #d62728; color: white; }
+.d3-cat8 { background: #ff9896; color: black; }
+.d3-cat9 { background: #9467bd; color: white; }
+.d3-cat10 { background: #c5b0d5; color: black; }
+.d3-cat11 { background: #8c564b; color: white; }
+.d3-cat12 { background: #c49c94; color: black; }
+.d3-cat13 { background: #e377c2; color: white; }
+.d3-cat14 { background: #f7b6d2; color: black; }
+.d3-cat15 { background: #7f7f7f; color: white; }
+.d3-cat16 { background: #c7c7c7; color: black; }
+.d3-cat17 { background: #bcbd22; color: white; }
+.d3-cat18 { background: #dbdb8d; color: black; }
+.d3-cat19 { background: #17becf; color: white; }
+.d3-cat20 { background: #9edae5; color: black; }
+.main-goal {
+    font-style: oblique;
+    font-weight: 500;
+}
+.main-goal:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    /*box-shadow: 0px 3px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 3px 0px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 3px 0px rgba(255,255,255,0.5);
+    -o-box-shadow: 0px 3px 0px rgba(255,255,255,0.5);
+    border-bottom: 1px solid transparent;*/
+    display: block;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.2;
@@ -93,7 +139,8 @@ h5 {
 h6 {
   font-size: 0.8rem;
 }
-article p {
+article p,
+aside p {
   margin-bottom: 1.2rem;
 }
 a {
@@ -110,12 +157,27 @@ a {
   display: block;
   border-bottom: 1px solid white;
 }*/
+code {
+    background: rgba(30,30,30,0.1);
+    padding: 0px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+article ul ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
 .row {
   display: flex;
   align-content: space-between;
 }
 .row .row {
   margin: 0 -1.5rem;
+}
+.row .row.row-spacing {
+    margin-bottom: 6rem;
 }
 .totals .row {
   justify-content: flex-end;
@@ -141,10 +203,21 @@ a {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
-.col-2 figure {
+.col-5 {
+    flex: 20%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.col-2 figure,
+.col-3 figure,
+.col-4 figure,
+.col-5 figure {
   width: 100%;
 }
-.col-2 figure img {
+.col-2 figure img,
+.col-3 figure img,
+.col-4 figure img,
+.col-5 figure img {
   max-width: 100%;
 }
 .section-aside {
@@ -155,6 +228,27 @@ a {
   flex: 70%;
   padding-left: 3em;
   max-width: 840px;
+}
+.new-logos {
+    margin: 10em -1.5em 14em!important;
+}
+.new-logos img {
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new-logos img:hover {
+    opacity: 1;
+}
+.book {
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+}
+
+.favorite-coding li {
+    list-style: none;
+    padding: 2rem 3rem;
+    opacity: 0.8;
 }
 
 header {
@@ -331,6 +425,10 @@ main article {
 .large-number span {
   font-size: 1.2rem;
 }
+.large-number .minutes {
+    letter-spacing: 1.5px;
+    padding-left: 3px;
+}
 .fa {
   font-size: 150%;
 }
@@ -363,7 +461,7 @@ main article {
     border-bottom: none;
     position: absolute;
     right: -0.5em;
-    top: 0;
+    top: 0.25em;
 }
 .huge-number {
   font-size: 5rem;
@@ -379,6 +477,13 @@ main article {
   border-radius: 50%;
   width: 65px;
   height: 65px;*/
+}
+.total-time .huge-number {
+    margin: 0;
+    line-height: 1;
+}
+.total-time .huge-number span {
+    font-size: 3.6rem;
 }
 .fa-2x {
   margin-bottom: 0.5rem;
@@ -424,18 +529,47 @@ main article {
   border-radius: 50%;
 }
 
+a.svg-demo {
+    border-bottom: 0;
+}
+.svg-demo {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.lynda-imgs {
+    display: flex;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+.lynda-imgs li {
+    list-style: none;
+    flex: 16.666666667%;
+    padding: 0 1em;
+}
+.lynda-imgs img {
+    max-width: 100%;
+    border-radius: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+
+
 .sort-courses {
   list-style: none;
   /*text-align: center;*/
 }
 .sort-courses li {
-  background: #6c80a6;
+  background: #008bcb;
   font-size: 0.8em;
   padding: 3px 10px;
   border-radius: 10px;
   margin: 0 0.1rem 0.5rem;
   display: inline-block;
   cursor: pointer;
+}
+.sort-courses li.active {
+    background: #0050b0;
 }
 
 .github-calendar-full {
@@ -446,31 +580,97 @@ main article {
   top: 2.5rem;
 }
 
-.book-images {
+
+.book-categories .article-subtitle {
+    margin-top: 3rem;
+}
+
+.book-images,
+.site-images {
   margin: -20rem -3rem 3rem;
 }
-.book-images article {
+.site-images.wp {
+    margin-top: -24rem;
+}
+.site-images.non-wp {
+    margin-top: -6rem;
+}
+.book-images article,
+.site-images article {
   display: flex;
   flex-wrap: wrap;
 }
 .book-images figure {
   flex: 10%;
 }
-.book-images img {
+.book-images img,
+.site-images img {
   max-width: 100%;
   max-height: 100%;
 }
-.book-images img:hover {
+.book-images img:hover,
+.site-images img:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
+.site-images figure {
+    flex: 25%;
+}
+.site-images.wp figure {
+    flex: 33.3333333%;
+}
+
+.site-images figure span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(145,168,208,0.6);
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+.site-images figure span a {
+    text-align: center;
+}
+.site-images .repo-link {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX( -50% );
+}
+.site-images .site-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    max-width: calc( 100% - 6rem );
+}
+
+/*
+ * -----------------------------------------
+ * Charts
+ * =========================================
+ */
+
+ path.link {
+     stroke: white;
+ }
+ g.node circle {
+     fill: white;
+ }
+ g.node text {
+     font-weight: 100;
+     font-size: 0.85rem;
+ }
+.x-axis .tick line,
+.x-sub-axis path {
+    display: none;
+}
+
 /* Pie Chart */
 .piechart {
-  margin: 3rem auto;
-  height: 300px;
-  width: 300px;
-  position: relative;
+  max-width: 100%;
 }
 .common-chart {
   position: absolute;
@@ -492,6 +692,7 @@ main article {
   left: 75px;
   z-index: 2;
 }
+#chartlabel,
 .chart-label {
   background: white;
   padding: 0.3rem 1rem;
@@ -501,7 +702,7 @@ main article {
   box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   font-size: 0.95rem;
 }
-.slice_1_label { top: 120px; right: -60px; }
+.slice_1_label { top: 120px; right: 0px; }
 .slice_2_label { top: 240px; left: 0px; }
 .slice_3_label { top: 140px; left: -60px; }
 .slice_4_label { top: 50px; left: -40px; }
@@ -581,4 +782,21 @@ main article {
   -o-transform: rotate(153.33333333deg);
   -ms-transform: rotate(153.33333333deg);
   transform: rotate(153.33333333deg);
+}
+
+.level {
+  fill: black;
+  font-weight: 100;
+  transform: translateX(0.5em);
+}
+.radar g:nth-child(11) .circle {
+  stroke: black;
+  stroke-width: 3px;
+}
+.radar g:nth-child(11) text {
+  fill: #555;
+}
+
+#design figure img {
+    margin: 1rem 0;
 }
