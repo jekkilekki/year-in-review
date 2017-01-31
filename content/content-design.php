@@ -1,25 +1,28 @@
-<section id="design">
+<div class="color-change">
+<section id="design" class="color-change">
   <div class="row">
-  <aside class="section-aside stick-it">
-    <h1 class="section-title">Design</h1>
-    <h2 class="section-subtitle">The Year of PHP</h2>
-    <p>
-        I hold a Master's degree in Media Design from Full Sail University and in 2016
-        I was given a chance to put it to practical use by designing 3 new English
-        language textbooks for use in the Korean university I teach at. The books
-        were written entirely by my colleagues (though I added an article to the third one,
-        Practical English Reading), but the layout and design of each was mine.
-    </p>
-    <p>
-        It was definitely a great opportunity for me to stretch my design skills in
-        a little different way and create a commercial product like this.
-    </p>
-    <p>
-        In addition to the 3 textbooks, I also led a high school class through the
-        process of creating a yearbook. Each student (13) contributed 1-2 pages of
-        the final design based on InDesign templates I prepared for them to use.
-        The remaining 100 pages were my design.
-    </p>
+  <aside class="section-aside">
+      <div class="aside-content">
+        <h1 class="section-title">Design</h1>
+        <h2 class="section-subtitle">The Year of Publication!</h2>
+        <p>
+            I hold a Master's degree in Media Design from Full Sail University and in 2016
+            I was given a chance to put it to practical use by designing 3 new English
+            language textbooks for use in the Korean university I teach at. The books
+            were written entirely by my colleagues (though I added an article to the third one,
+            Practical English Reading), but I created all the layout and design.
+        </p>
+        <p>
+            It was definitely a great opportunity for me to stretch my design skills in
+            a little different way and create a commercial product like this.
+        </p>
+        <p>
+            In addition to the 3 textbooks, I also led a high school class through the
+            process of creating a yearbook. Each student (13) contributed 1-2 pages of
+            the final design based on InDesign templates I prepared for them to use.
+            Then, I put together the final 100-page design.
+        </p>
+    </div>
   </aside>
   <div class="section-content">
 
@@ -38,7 +41,6 @@
         <div class="col-3">
           <h3 class="article-title">Logos Designed</h3>
           <p class="large-number">5</p>
-          <p class="article-description">Shown in order below:</p>
           <ol class="article-description">
               <li>Winning Story (rebrand)</li>
               <li>Duet English (summer camp)</li>
@@ -97,7 +99,7 @@
             </figure>
           <ul class="article-description">
               <li>97 pages</li>
-              <li>1 week @ 20 hours: first draft</li>
+              <li>1 wk @ 20 hours: first draft</li>
               <li>15 hours: second draft</li>
           </ul>
         </div>
@@ -116,7 +118,7 @@
             </figure>
           <ul class="article-description">
               <li>159 pages</li>
-              <li>1 month @ 40 hrs/wk</li>
+              <li>2 wks @ 40 hrs/wk</li>
           </ul>
         </div>
     </div>
@@ -128,12 +130,15 @@
       <div class="row spaced-image-row">
           <div class="col-2 spaced-image-description">
             <h4 class="article-subtitle">GPA High School</h4>
-            <ul class="article-description">
-              <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
-              <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
-              <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
-              <li>Building an <a href="">Advent calendar</a> using REST and ReactJS</li>
-            </ul>
+            <p class="article-description">
+              In order to make the school's website more helpful for both prospective
+              (English-speaking) students and parents, and current staff,
+              I took archived content from our old WordPress site and combined
+              it with the Teacher's Manual and additional English content we'd only been using
+              internally. Now, I'm working on synching this version of the site with
+              our current Google Apps for Education accounts and replacing the old
+              English site with this one.
+          </p>
           </div>
           <div class="col-2">
             <figure>
@@ -149,22 +154,34 @@
           </div>
           <div class="col-2 spaced-image-description">
             <h4 class="article-subtitle">High School Yearbook</h4>
-            <ul class="article-description">
-              <li>Created a <a href="">Codepen Collection</a> using React</li>
-              <li>Learned about using <a href="">React with Babble.js</a></li>
-              <li>Built an <a href="">Advent calendar</a> with React Components</li>
-            </ul>
+            <p class="article-description">
+              Previously, the Yearbook had been created entirely by an after-school
+              activity program that met twice per week. That club used MS Publisher
+              to create the Yearbook.
+            </p>
+            <p class="article-description">
+              However, in Spring 2016, for the first time, Yearbook became a semester-long
+              class. I led the students through an Intro to Graphic Design
+              course and created the Yearbook in Adobe InDesign. This class was successful
+              enough that it is being offered again for Spring 2017.
+            </p>
           </div>
       </div>
       <div class="row spaced-image-row">
           <div class="col-2 spaced-image-description">
             <h4 class="article-subtitle">Rebrand Class</h4>
-            <ul class="article-description">
-              <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
-              <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
-              <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
-              <li>Building an <a href="">Advent calendar</a> using REST and ReactJS</li>
-            </ul>
+            <p class="article-description">
+              Another new course offering at GPA was called "Graphic Design" and
+              offered in the Fall 2016 semester. Rather than rehashing what I'd
+              previously taught in the Yearbook class, I decided to teach students
+              the fundamentals of Graphic Design by choosing their own company to
+              fully rebrand (logo, posters, wearables, and so on).
+            </p>
+            <p class="article-description">
+              Whereas Yearbook focused primarily on Adobe InDesign, this Graphic
+              Design course focused primarily on Adobe Illustrator. (GPA also
+              offers a course on Photoshop, taught by the Art teacher.)
+          </p>
           </div>
           <div class="col-2">
             <figure>
@@ -180,14 +197,45 @@
           </div>
           <div class="col-2 spaced-image-description">
             <h4 class="article-subtitle">Winning Story Cafe</h4>
-            <ul class="article-description">
-              <li>Created a <a href="">Codepen Collection</a> using React</li>
-              <li>Learned about using <a href="">React with Babble.js</a></li>
-              <li>Built an <a href="">Advent calendar</a> with React Components</li>
-            </ul>
+            <p class="article-description">
+              One of my friends in Jeonju who runs a Study Cafe asked me at the beginning
+              of the year to help him rebrand his Cafe as they transitioned to a new
+              location and business model. I wanted to update the logo and design style
+              without straying too far from the original. This design is what I came up
+              with. (View the design process and original logo here.)
+          </p>
           </div>
       </div>
 
   </article>
+    <article class="high-school">
+        <h3 class="article-title">High School Courses Taught</h3>
+        <p>
+            Although most of the new high school courses I taught this year
+            were Graphic Design courses, I've also taught a number of programming
+            and computer literacy courses over the years. Here's a complete list:
+        </p>
+        <div class="row">
+            <div class="col-2">
+                <p class="article-description"><strong>NEW Courses in 2016-17</strong></p>
+                <ul class="article-description">
+                    <li>Spring 2016: Yearbook (InDesign)</li>
+                    <li>Fall 2016: Graphic Design (Illustrator)</li>
+                    <li>Fall 2016: Robotics (Engineering/Physics/CAD)</li>
+                    <li>Fall 2016: Middle School Tech (Computer Literacy)</li>
+                    <li>Spring 2017: AP Computer Science Principles (PHP)</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <p class="article-description"><strong>Courses Previously Taught</strong></p>
+                <ul class="article-description">
+                    <li>2013-2015: Computer A (MS/Google Office)</li>
+                    <li>2013-2015: Computer B (HTML/CSS/JS/Bootstrap)</li>
+                    <li>Spring 2015: AP Computer Science (Java)</li>
+                </ul>
+            </div>
+        </div>
+    </article>
   </div>
 </section>
+</div>

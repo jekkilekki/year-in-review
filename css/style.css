@@ -7,6 +7,9 @@
 .clear {
   clear: both;
 }
+.hidden {
+    display: none;
+}
 .screen-reader-text {
     /* https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/ */
     clip: rect(1px, 1px, 1px, 1px);
@@ -29,7 +32,7 @@ body {
   line-height: 1.6;
   color: white;
   overflow-x: hidden;
-  padding: 3em;
+  padding: 0 3em;
 }
 section > .row {
   max-width: 1200px;
@@ -52,6 +55,26 @@ header:after {
     right: 0;
     position: absolute;
     z-index: -1;
+}
+.section-aside {
+    /*top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    margin: 0px;
+    display: block;
+    position: relative;
+    box-sizing: content-box;
+    min-height: 614px;
+    height: 614px;
+    padding-top: 32.8125px;
+    padding-bottom: 5336.59px;*/
+}
+.stick-it {
+    position: fixed;
+    top: 4rem;
+    width: 33.333333333%;
+    max-width: 360px;
 }
 .bg-learning {
   background: #91a8d0;
@@ -229,6 +252,37 @@ article ul ul {
   padding-left: 3em;
   max-width: 840px;
 }
+
+@media all and (max-width: 1000px) {
+    section > .row {
+        display: block;
+    }
+    .section-aside,
+    .section-content {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .section-aside {
+        margin-bottom: 6em;
+    }
+    .section-content {
+        padding: 0;
+    }
+}
+@media all and (max-width: 600px) {
+    .row {
+        display: block;
+    }
+    article,
+    .col-2, .col-3, .col-4, .col-5 {
+        margin-bottom: 4em;
+    }
+    .col-3 {
+        flex: none;
+        width: 100%;
+    }
+}
 .new-logos {
     margin: 10em -1.5em 14em!important;
 }
@@ -304,6 +358,7 @@ header img {
   background: white;
   color: #91a8d0;
   font-weight: 100;
+  display: none;
 }
 .main-navigation ul {
   list-style: none;
@@ -376,6 +431,11 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+#life .icon {
+    display: block;
+    fill: black;
+    font-size: 3rem;
+}
 /*
  * -----------------------------------------
  * Sections
@@ -574,6 +634,7 @@ a.svg-demo {
 
 .github-calendar-full {
   padding: 0 0 2rem;
+  max-width: 100%;
 }
 .github-calendar {
   position: absolute;
@@ -625,10 +686,14 @@ a.svg-demo {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(145,168,208,0.6);
+    background: rgba(145,168,208,0.8);
     width: 100%;
     height: 100%;
     padding: 3rem;
+    display: none;
+}
+.site-images figure:hover span {
+    display: block;
 }
 .site-images figure span a {
     text-align: center;
@@ -644,8 +709,14 @@ a.svg-demo {
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50% );
-    max-width: calc( 100% - 6rem );
+    width: calc( 100% - 6rem );
 }
+
+@media all and (max-width: 1000px) {
+    .book-images,
+    .site-images {
+        margin-top: -16em;
+    }
 
 /*
  * -----------------------------------------
@@ -666,6 +737,7 @@ a.svg-demo {
 .x-axis .tick line,
 .x-sub-axis path {
     display: none;
+    stroke: none;
 }
 
 /* Pie Chart */

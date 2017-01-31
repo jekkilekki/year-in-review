@@ -25,7 +25,7 @@
               <h2 class="page-subtitle">2016</h2>
             </hgroup>
             <img src="assets/images/aaron-profile-2016-me-small.jpg">
-            <p>Hi! My name's Aaron Snowberger and I'm an WordPress/PHP web developer
+            <p>Hi! My name's Aaron Snowberger and I'm a WordPress/PHP web developer
                 who's living in <a href="">Jeonju, South Korea</a>. I teach ESL at <a href="">Jeonju University</a>,
                 Computer Science and Graphic Design at <a href="">GPA International High School</a>,
                 and do <a href="">freelance work</a> with various clients to help them achieve their

@@ -1,8 +1,10 @@
+<div class="color-change">
 <section id="learning">
     <div class="row">
 
     <!-- Learning Intro & Description -->
-    <aside class="section-aside stick-it">
+    <aside class="section-aside">
+      <div class="aside-content">
         <h1 class="section-title">Learning</h1>
         <h2 class="section-subtitle">The Year of PHP</h2>
         <p>I'm passionate about making the web a better place for everyone.
@@ -18,6 +20,7 @@
             put in job applications for a WordPress development position. Both of
             these challenged me to push myself beyond my perceived limitations.
         </p>
+      </div>
     </aside>
 
     <!-- Learning Section Start -->
@@ -236,7 +239,7 @@
                 <li>Created the D3 charts on this site
                     <ul>
                         <li>"Lynda.com Authors" bar chart</li>
-                        <li>"Life Categories" tree chart</li>
+                        <li>"Life Categories" tree chart &rarr;</li>
                         <li>"Books Read" pie chart</li>
                         <li>"Life Satisfaction" radar chart</li>
                     </ul>
@@ -245,31 +248,6 @@
             </div>
             <div class="col-2">
                 <div id="d3-tree"></div>
-                <!-- <div class="jq-piechart">
-                  <div class="common-chart chart-border"></div>
-                  <div class="common-chart chart-base"></div>
-                  <div class="common-chart chart-center"></div>
-                  <div class="common-chart chart-slice slice_1_c">
-                    <div class="common-chart chart-slice slice_1_w"></div>
-                  </div>
-                  <div class="common-chart chart-slice slice_2_c">
-                    <div class="common-chart chart-slice slice_2_w"></div>
-                  </div>
-                  <div class="common-chart chart-slice slice_3_c">
-                    <div class="common-chart chart-slice slice_3_w"></div>
-                  </div>
-                  <div class="common-chart chart-slice slice_4_c">
-                    <div class="common-chart chart-slice slice_4_w"></div>
-                  </div>
-                  <div class="common-chart chart-slice slice_5_c">
-                    <div class="common-chart chart-slice slice_5_w"></div>
-                  </div>
-                  <p class="chart-label slice_1_label">12 Business</p>
-                  <p class="chart-label slice_2_label">6 Personal Development</p>
-                  <p class="chart-label slice_3_label">4 Biography</p>
-                  <p class="chart-label slice_4_label">3 Psychology</p>
-                  <p class="chart-label slice_5_label">2 Fiction</p>
-                </div> -->
             </div>
         </div>
         <div class="row spaced-image-row">
@@ -278,12 +256,10 @@
                   <a class="svg-demo" href="">
                   <?php include( 'content-svg.php' ); ?>
                   </a>
-                  <!-- <img src="assets/images/code-svg.png"> -->
-                <!-- <svg class="sqirl-svg"><use xlink:href="assets/images/symbol-defs.svg#sqirl-svg"></use></svg> -->
               </figure>
             </div>
             <div class="col-2 spaced-image-description">
-              <h4 class="article-subtitle">SVG Icon Injection</h4>
+              <h4 class="article-subtitle">SVG Injection &amp; Animation</h4>
               <ul class="article-description">
                 <li>One project I built used <code>svgeezy.js</code> and <code>svg-injector.js</code> to inject SVG code into the specified <code>&lt;img&gt;</code> tags.</li>
                 <li>The client of that project also wanted animation, so I animated the SVGs directly in the code with <code>&lt;animateTransform/&gt;</code> tags.</li>
@@ -327,7 +303,7 @@
   </div><!-- .row -->
 </section>
 
-<section class="book-images">
+<section class="book-images full-width">
   <article>
     <?php
       for( $i = 0; $i < count( $images ); $i++ ) {
@@ -358,31 +334,7 @@
         </p>
         <div class="row">
           <div class="col-2">
-            <div id="piechart" class="piechart">
-              <!-- <div class="common-chart chart-border"></div>
-              <div class="common-chart chart-base"></div>
-              <div class="common-chart chart-center"></div>
-              <div class="common-chart chart-slice slice_1_c">
-                <div class="common-chart chart-slice slice_1_w"></div>
-              </div>
-              <div class="common-chart chart-slice slice_2_c">
-                <div class="common-chart chart-slice slice_2_w"></div>
-              </div>
-              <div class="common-chart chart-slice slice_3_c">
-                <div class="common-chart chart-slice slice_3_w"></div>
-              </div>
-              <div class="common-chart chart-slice slice_4_c">
-                <div class="common-chart chart-slice slice_4_w"></div>
-              </div>
-              <div class="common-chart chart-slice slice_5_c">
-                <div class="common-chart chart-slice slice_5_w"></div>
-              </div>
-              <p class="chart-label slice_1_label">12 Business</p>
-              <p class="chart-label slice_2_label">6 Personal Development</p>
-              <p class="chart-label slice_3_label">4 Biography</p>
-              <p class="chart-label slice_4_label">3 Psychology</p>
-              <p class="chart-label slice_5_label">2 Fiction</p> -->
-            </div>
+            <div id="piechart" class="piechart"></div>
           </div>
           <div class="col-2">
             <h4 class="article-subtitle">The Best Books in 2016</h4>
@@ -423,3 +375,4 @@
   </div>
 </div><!-- .row -->
 </section>
+</div>
