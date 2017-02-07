@@ -36,26 +36,13 @@ body {
 }
 section > .row {
   max-width: 1200px;
-  margin: 20rem auto;
+  margin: 0 auto;
 }
-header {
+.color-change {
+    margin-top: 20em;
+    margin-bottom: 20em;
+}
 
-}
-header:after {
-    /* https://css-tricks.com/snippets/css/transparent-background-images/ */
-    background: url( '../assets/images/korea-bg.jpg' );
-    background-size: cover;
-    background-attachment: fixed;
-    content: "";
-    margin: 0 -3em;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
 .section-aside {
     /*top: auto;
     left: auto;
@@ -76,23 +63,23 @@ header:after {
     width: 33.333333333%;
     max-width: 360px;
 }
-.bg-learning {
-  background: #91a8d0;
+.stuck {
+    position: absolute;
+}
+.bg-home {
+    background: #44a8d8;
 }
 .bg-coding {
-  background: #9a0;
+  background: #91a8d0;
 }
 .bg-design {
-  background: skyblue;
-}
-.bg-life {
   background: lightskyblue;
 }
-.bg-newyear {
-  background: #86B451;
+.bg-life {
+  background: #7ADFBB;
 }
-footer {
-  background: #93c;
+.bg-newyear {
+  background: #2eb6b6;
 }
 
 strong {
@@ -172,6 +159,7 @@ a {
   position: relative;
   padding-bottom: 1px;
   border-bottom: 1px solid white;
+  cursor: pointer;
 }
 /*a::after {
   content: '';
@@ -237,15 +225,22 @@ article ul ul {
 .col-5 figure {
   width: 100%;
 }
+figure img,
 .col-2 figure img,
 .col-3 figure img,
 .col-4 figure img,
 .col-5 figure img {
   max-width: 100%;
 }
+figure img {
+    margin-bottom: 1em;
+}
 .section-aside {
   flex: 30%;
   max-width: 360px;
+}
+.aside-content {
+    padding-top: 0;
 }
 .section-content {
   flex: 70%;
@@ -305,11 +300,29 @@ article ul ul {
     opacity: 0.8;
 }
 
-header {
+header,
+footer {
   text-align: center;
   min-height: 100vh;
 }
-header .intro {
+header:after,
+footer:after {
+    /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+    background: url( '../assets/images/korea-bg.jpg' );
+    background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    margin: 0 -3em;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+header .intro,
+footer .outro {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -320,7 +333,7 @@ header p {
     margin-bottom: 0;
     text-align: left;
 }
-header p.haiku {
+p.haiku {
     font-style: oblique;
     text-align: center;
     position: absolute;
@@ -648,10 +661,10 @@ a.svg-demo {
 
 .book-images,
 .site-images {
-  margin: -20rem -3rem 3rem;
+  margin: 0rem -3rem 3rem;
 }
 .site-images.wp {
-    margin-top: -24rem;
+    margin-top: 0rem;
 }
 .site-images.non-wp {
     margin-top: -6rem;
@@ -678,8 +691,12 @@ a.svg-demo {
 .site-images figure {
     flex: 25%;
 }
-.site-images.wp figure {
+/*.site-images.wp figure {
     flex: 33.3333333%;
+}*/
+.book-images figure img,
+.site-images figure img {
+    margin-bottom: 0;
 }
 
 .site-images figure span {
@@ -717,7 +734,7 @@ a.svg-demo {
     .site-images {
         margin-top: -16em;
     }
-
+}
 /*
  * -----------------------------------------
  * Charts

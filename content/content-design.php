@@ -1,12 +1,12 @@
 <div class="color-change">
-<section id="design" class="color-change">
+<section id="design">
   <div class="row">
   <aside class="section-aside">
       <div class="aside-content">
         <h1 class="section-title">Design</h1>
         <h2 class="section-subtitle">The Year of Publication!</h2>
         <p>
-            I hold a Master's degree in Media Design from Full Sail University and in 2016
+            I hold a Master's degree in Media Design from <a href="https://www.fullsail.edu/">Full Sail University</a> and in 2016
             I was given a chance to put it to practical use by designing 3 new English
             language textbooks for use in the Korean university I teach at. The books
             were written entirely by my colleagues (though I added an article to the third one,
@@ -18,7 +18,7 @@
         </p>
         <p>
             In addition to the 3 textbooks, I also led a high school class through the
-            process of creating a yearbook. Each student (13) contributed 1-2 pages of
+            process of creating a <a href="http://gpa.justkeeplearning.xyz/yearbook">yearbook</a>. Each student (13) contributed 1-2 pages of
             the final design based on InDesign templates I prepared for them to use.
             Then, I put together the final 100-page design.
         </p>
@@ -55,8 +55,8 @@
           <p class="large-number">3</p>
           <p class="article-description">3 new English textbooks for Jeonju University (below):</p>
           <ul class="article-description">
-              <li>Practical English Writing 1</li>
-              <li>Practical English Writing 2</li>
+              <li><a href="http://practicalenglishwriting.com">Practical English Writing 1</a></li>
+              <li><a href="http://practicalenglishwriting.com">Practical English Writing 2</a></li>
               <li>Practical English Reading</li>
           </ul>
         </div>
@@ -95,7 +95,9 @@
       <div class="row">
         <div class="col-3">
             <figure>
+                <a href="http://practicalenglishwriting.com">
                 <img class="book" src="assets/images/design/01-pewi.jpg">
+                </a>
             </figure>
           <ul class="article-description">
               <li>97 pages</li>
@@ -105,7 +107,9 @@
         </div>
         <div class="col-3">
             <figure>
+                <a href="http://practicalenglishwriting.com">
                 <img class="book" src="assets/images/design/02-pewii.jpg">
+                </a>
             </figure>
           <ul class="article-description">
               <li>84 pages</li>
@@ -124,7 +128,7 @@
     </div>
     </article>
 
-    <article class="high-school">
+    <article class="design-projects">
       <h3 class="article-title">Rebranding Projects</h3>
 
       <div class="row spaced-image-row">
@@ -142,14 +146,18 @@
           </div>
           <div class="col-2">
             <figure>
-              <img src="assets/images/sites/wp/05-gpa-site.jpg">
+                <a href="http://gpa.justkeeplearning.xyz">
+                    <img src="assets/images/sites/www/02-gpa-site.jpg">
+                </a>
             </figure>
           </div>
       </div>
       <div class="row spaced-image-row">
           <div class="col-2">
             <figure>
-              <img class="book" src="assets/images/design/03-gpa-yearbook.jpg">
+                <a href="http://gpa.justkeeplearning.xyz/yearbook">
+                    <img class="book" src="assets/images/design/03-gpa-yearbook.jpg">
+                </a>
             </figure>
           </div>
           <div class="col-2 spaced-image-description">
@@ -202,13 +210,13 @@
               of the year to help him rebrand his Cafe as they transitioned to a new
               location and business model. I wanted to update the logo and design style
               without straying too far from the original. This design is what I came up
-              with. (View the design process and original logo here.)
+              with.
           </p>
           </div>
       </div>
 
   </article>
-    <article class="high-school">
+    <article class="high-school-courses">
         <h3 class="article-title">High School Courses Taught</h3>
         <p>
             Although most of the new high school courses I taught this year

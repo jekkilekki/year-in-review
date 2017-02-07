@@ -1,31 +1,28 @@
 <div class="color-change">
-<section id="newyear" class="color-change">
+<section id="newyear">
   <div class="row">
   <aside class="section-aside">
       <div class="aside-content">
         <h1 class="section-title">2017 Goals</h1>
         <h2 class="section-subtitle">The Year of Transition</h2>
         <p>
-          Hi! My name's Aaron Snowberger and I'm an WordPress/PHP web developer
-          who's living in Jeonju, South Korea. I teach ESL at <a href="">Jeonju University</a>,
-          Computer Science and Graphic Design at <a href="">GPA International High School</a>,
-          and do freelance work with <a href="">various clients</a> to help them achieve their
-          objectives on the web and in design. This is a Review of my Year: 2016.
+          2016 was a year of Growth and Development for my wife and I. We are
+          anticipating 2017 to be a year of Transition. We are unsure of EXACTLY
+          what kinds of Transitions we have to look forward to this year, but here
+          is a list of our current situations and some thoughts for the future.
         </p>
-        <p>
-          I'm passionate about making the web a better place for everyone (<a href="">South
-          Korean internet</a> drove me to that passion in the first place).
-          To that end, I strive to create websites and projects that are beautiful,
-          intuitive, and have a great user experience. I work hard to stick to
-          well-established coding standards, use loads of comments, and document
-          everything. With design, I strive to make things that are not only
-          visually pleasing, but also communicate the design objectives effectively
-          to their desired audience.
-        </p>
-        <p>
-          In 2016, I made a number of key decisions that helped propel those visions
-          forward. Two of the biggest were rejoining Lynda.com and
-        </p>
+        <ol>
+            <li>We are finally DEBT FREE!</li>
+            <li>My wife graduates with her Master's Degree on Feb 22, 2017</li>
+            <li>She has 400+ teaching hours and is hoping to continue this job</li>
+            <li>My contract at Jeonju University is up March 2018 - I need to decide by November what to do</li>
+            <li>Considering moving into a bigger house</li>
+            <li>Considering a trip to the US</li>
+            <li>Considering saving money for a new car or appliances</li>
+            <li>Jenna changes daycares (going to Isaac's)</li>
+            <li>I'm hoping to get a few computer certifications</li>
+            <li>Also hoping to save 3-6 months expenses in a separate bank account (rainy day fund)</li>
+        </ol>
     </div>
   </aside>
   <div id="reflection" class="section-content">
@@ -139,6 +136,46 @@
       </div>
     </div>
   </article>
+
+  <article class="comp-certs">
+      <h3 class="article-title">Computer Cerifications</h3>
+      <p>
+          This is something I've only started thinking about recently, but it's
+          definitely something I'm strongly considering. The following are computer
+          certifications I'm hoping to work on acquiring this year:<br>
+      </p>
+      <div class="comp-certs-list row">
+          <div class="col-4">
+              <figure>
+                  <a href="https://certification.comptia.org/certifications/a">
+                      <img src="assets/images/cert-comptia-aplus.png">
+                  </a>
+              </figure>
+          </div>
+          <div class="col-4">
+              <figure>
+                  <a href="https://certification.comptia.org/certifications/network">
+                      <img src="assets/images/cert-comptia-network.png">
+                  </a>
+              </figure>
+          </div>
+          <div class="col-4">
+              <figure>
+                  <a href="https://certification.comptia.org/certifications/security">
+                      <img src="assets/images/cert-comptia-security.png">
+                  </a>
+              </figure>
+          </div>
+          <div class="col-4">
+              <figure>
+                  <a href="http://www.zend.com/en/services/certification/php-5-certification">
+                      <img src="assets/images/cert-zend-php2.png">
+                  </a>
+              </figure>
+          </div>
+      </div>
+  </article>
+
 </div>
 </section>
 </div>

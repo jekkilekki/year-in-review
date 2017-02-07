@@ -15,7 +15,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/chart.js"></script>
-    <title>Year in Review: 2016</title>
+    <title>Aaron Snowberger | Year in Review: 2016</title>
 </head>
 <body>
     <header>
@@ -26,9 +26,10 @@
             </hgroup>
             <img src="assets/images/aaron-profile-2016-me-small.jpg">
             <p>Hi! My name's Aaron Snowberger and I'm a WordPress/PHP web developer
-                who's living in <a href="">Jeonju, South Korea</a>. I teach ESL at <a href="">Jeonju University</a>,
-                Computer Science and Graphic Design at <a href="">GPA International High School</a>,
-                and do <a href="">freelance work</a> with various clients to help them achieve their
+                who's living in <a href="https://www.lonelyplanet.com/south-korea/jeollabuk-do/jeonju/travel-tips-and-articles/10-reasons-to-put-jeonju-on-your-bucket-list">
+                Jeonju, South Korea</a>. I teach ESL at <a href="http://jj.ac.kr">Jeonju University</a>,
+                Computer Science and Graphic Design at <a href="http://gpa.justkeeplearning.xyz">GPA International High School</a>,
+                and do <a href="http://aaronsnowberger.com">freelance work</a> with various clients to help them achieve their
                 objectives on the web and in design.
                 <strong>This is a Review of my Year: 2016.</strong>
             </p>
@@ -60,47 +61,47 @@
                   </a>
               </li>
               <li>
-                  <a href="http://www.aaronsnowberger.com">
+                  <a href="https://www.linkedin.com/in/aaronsnowberger">
                   <svg class="icon icon-linkedin"><use xlink:href="assets/images/symbol-defs.svg#icon-linkedin"></use></svg>
                   <span class="screen-reader-text">LinkedIn</span>
                   </a>
               </li>
               <li>
-                  <a href="http://www.aaronsnowberger.com">
+                  <a href="https://profiles.wordpress.org/jekkilekki">
                   <svg class="icon icon-wordpress"><use xlink:href="assets/images/symbol-defs.svg#icon-wordpress"></use></svg>
                   <span class="screen-reader-text">WordPress</span>
                   </a>
               </li>
               <li>
-                  <a href="http://www.aaronsnowberger.com">
+                  <a href="http://github.com/jekkilekki">
                   <svg class="icon icon-github"><use xlink:href="assets/images/symbol-defs.svg#icon-github"></use></svg>
                   <span class="screen-reader-text">Github</span>
                   </a>
               </li>
               <li>
-                  <a href="http://www.aaronsnowberger.com">
+                  <a href="http://codepen.io/jekkilekki">
                   <svg class="icon icon-codepen"><use xlink:href="assets/images/symbol-defs.svg#icon-codepen"></use></svg>
                   <span class="screen-reader-text">Codepen</span>
                   </a>
               </li>
               <li>
-                  <a href="http://www.aaronsnowberger.com">
+                  <a href="https://www.facebook.com/jekkilekki">
                   <svg class="icon icon-facebook"><use xlink:href="assets/images/symbol-defs.svg#icon-facebook"></use></svg>
                   <span class="screen-reader-text">Facebook</span>
                   </a>
               </li>
               <li>
-                  <a href="http://www.aaronsnowberger.com">
+                  <a href="https://twitter.com/jekkilekki">
                   <svg class="icon icon-twitter"><use xlink:href="assets/images/symbol-defs.svg#icon-twitter"></use></svg>
                   <span class="screen-reader-text">Twitter</span>
                   </a>
               </li>
-              <li>
-                  <a href="http://www.aaronsnowberger.com">
+              <!-- <li>
+                  <a href="#">
                   <svg class="icon icon-envelop"><use xlink:href="assets/images/symbol-defs.svg#icon-envelop"></use></svg>
                   <span class="screen-reader-text">Gmail</span>
                   </a>
-              </li>
+              </li> -->
           </ul>
       </ul>
     </header>

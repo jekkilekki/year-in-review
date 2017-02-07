@@ -263,11 +263,11 @@ var labels = d3.selectAll( 'g.slice' ).append( 'text' )
     });
 
 // Add a tooltip for the pie chart
-var pietool = d3.selectAll( 'body' ).append( 'div' )
-    .attr( 'id', 'chartlabel' )
-    .attr( 'class', 'hidden' )
-    .append( 'p' )
-        .attr( 'id', 'chartvalue' );
+// var pietool = d3.selectAll( 'body' ).append( 'div' )
+//     .attr( 'id', 'chartlabel' )
+//     .attr( 'class', 'hidden' )
+//     .append( 'p' )
+//         .attr( 'id', 'chartvalue' );
 
 pieChart.on( 'mouseover', function(d) {
   d3.select( '#chartlabel' )
@@ -554,11 +554,11 @@ pieChart.on( 'mouseover', function(d) {
 
 
      // Add a tooltip for the radar chart
-     var radartool = d3.selectAll( 'body' ).append( 'div' )
-         .attr( 'id', 'chartlabel' )
-         .attr( 'class', 'hidden' )
-         .append( 'p' )
-             .attr( 'id', 'chartvalue' );
+    //  var radartool = d3.selectAll( 'body' ).append( 'div' )
+    //      .attr( 'id', 'chartlabel' )
+    //      .attr( 'class', 'hidden' )
+    //      .append( 'p' )
+    //          .attr( 'id', 'chartvalue' );
 
      point.on( 'mouseover', function(d) {
          //console.log( 'num' + d.num );

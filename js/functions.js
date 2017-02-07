@@ -82,7 +82,7 @@ $( document ).ready( function() {
 
         var sectionNum = 0,
             sectionClass = [
-                'bg-home', 'bg-learning', 'bg-coding', 'bg-design', 'bg-life', 'bg-newyear'
+                'bg-learning', 'bg-coding', 'bg-design', 'bg-life', 'bg-newyear'
             ],
             thisSecHeight;
 
@@ -102,7 +102,7 @@ $( document ).ready( function() {
                     aside = sec.find( '.aside-content' ),
                     content = sec.find( '.section-content' );
 
-                if( content.visible( true ) ) {
+                //if( content.visible( true ) ) {
                     // Get the height of this current aside
                     var asideHeight = aside.height(),
                         contentHeight = content.height(),
@@ -113,8 +113,12 @@ $( document ).ready( function() {
                             offset = str.substr(0, str.length-2);
 
                     // If the aside is at the top of the screen (48px down), stick it
-                    if ( aside.offset().top < fromTop + 48 ) {
+                    if ( aside.offset().top < fromTop + 48 && !aside.hasClass( 'stuck' )) {
                         var width = aside.width();
+                        // if( aside.hasClass( 'stuck' ) ) {
+                        //     aside.removeClass( 'stuck' );
+                        //     aside.css( 'padding-top', '0' );
+                        // }
                         aside.addClass( 'stick-it' );
                         aside.css( 'width', width + 'px' );
                     }
@@ -124,22 +128,31 @@ $( document ).ready( function() {
                     }
 
                     // OR, if we get to the end of a section
-                    else if ( location + contentHeight < fromTop + asideHeight + 120 ) {
-                        aside.css( 'position', 'absolute' );
-                        aside.css( 'padding-top', contentHeight - asideHeight - 120 + 'px' );
+                    else if ( location + contentHeight < fromTop + asideHeight + 160 ) {
                         aside.removeClass( 'stick-it' );
+                        aside.addClass( 'stuck' );
+                        aside.css( 'padding-top', contentHeight - asideHeight - 160 + 'px' );
                     }
 
+                    else if( aside.hasClass( 'stuck' ) && location + contentHeight > fromTop + asideHeight + 208 ) {
+                        aside.removeClass( 'stuck' );
+                        aside.css( 'padding-top', 0 );
+                        aside.addClass( 'stick-it' );
+                    }
+
+                    else if( sec.offset().top > fromTop + 48 ) {
+                        aside.removeClass( 'stick-it' );
+                    }
                     // OR, if we go scroll back UP after a section absolutely positions this
                     //else if ( aside.offset().top + aside.css( 'padding-top' ) ) {
 
 
-                    else if( location + contentHeight > fromTop + asideHeight + 120 ) {
-                        aside.css( 'position', 'fixed' );
-                        aside.css( 'padding-top', '0' );
-                        aside.addClass( 'stick-it' );
-                    }
-                }
+                    // else if( location + contentHeight > fromTop + asideHeight + 120 ) {
+                    //     aside.css( 'position', 'fixed' );
+                    //     aside.css( 'padding-top', '0' );
+                    //     aside.addClass( 'stick-it' );
+                    // }
+                //}
 
             } else {
                 $( 'body' ).removeClass( sectionClass[i] );

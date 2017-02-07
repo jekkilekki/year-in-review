@@ -16,7 +16,7 @@
             to their desired audience.
         </p>
         <p>In 2016, I made a number of key decisions that helped propel those visions
-            forward. Two of the biggest were rejoining Lynda.com and starting to
+            forward. Two of the biggest were rejoining <a href="http://lynda.com">Lynda.com</a> and starting to
             put in job applications for a WordPress development position. Both of
             these challenged me to push myself beyond my perceived limitations.
         </p>
@@ -29,7 +29,7 @@
         <!-- Certifications -->
         <article class="certifications">
             <h3 class="article-title">Lynda.com Learning Paths Completed</h3>
-            <p>My primary goal for 2016 was: to <a href="">learn PHP deeply.</a> Here are the results.</p>
+            <p>My primary goal for 2016 was: to <strong>learn PHP deeply.</strong> Here are the results.</p>
 
             <!-- Badges -->
             <div class="row badges">
@@ -127,10 +127,10 @@
             <p class="large-number"><?php echo $num_categories['WordPress']; ?></p>
             <p class="article-description">I've been learning WordPress since 2010:</p>
             <ul class="article-description">
-              <li>2010: <a href="">1st WordPress site</a></li>
+              <li>2010: 1st WordPress site</li>
               <li>2012: 1st WP code mod</li>
-              <li>2014: <a href="">1st plugin on .org</a></li>
-              <li>2016: <a href="">1st theme on .org</a></li>
+              <li>2014: <a href="https://wordpress.org/plugins/jkl-reviews/">1st plugin on .org</a></li>
+              <li>2016: <a href="https://wordpress.org/themes/jkl/">1st theme on .org</a></li>
             </ul>
           </div>
           <!-- Second Third: PHP Courses -->
@@ -142,14 +142,14 @@
                 and focus on <em>mastering</em> PHP.
             </p>
             <p class="article-description">
-              My ultimate goal is <a href="">Zend PHP Certification.</a>
+              My ultimate goal is <a href="http://www.zend.com/en/services/certification/php-5-certification">Zend PHP Certification.</a>
             </p>
           </div>
           <!-- Third Third: JavaScript Courses -->
           <div class="col-3">
             <h3 class="article-title">JavaScript Courses</h3>
             <p class="large-number"><?php echo $num_categories['JavaScript']; ?></p>
-            <p class="article-description"><a href="">2017 will be my year to learn JavaScript deeply!</a>
+            <p class="article-description"><strong>2017 will be my year to learn JavaScript deeply!</strong>
               I've already worked on:
             </p>
               <ul class="article-description">
@@ -173,22 +173,34 @@
           <div class="d3-barchart"></div>
           <ul class="lynda-imgs">
               <li>
-                  <a href=""><img src="assets/images/lynda_morten_thumb.jpg"></a>
+                  <a href="https://www.lynda.com/Morten-Rand-Hendriksen/725535-1.html">
+                      <img src="assets/images/lynda_morten_thumb.jpg">
+                  </a>
               </li>
               <li>
-                  <a href=""><img src="assets/images/lynda_ray_thumb.jpg"></a>
+                  <a href="https://www.lynda.com/Ray-Villalobos/832401-1.html">
+                      <img src="assets/images/lynda_ray_thumb.jpg">
+                  </a>
               </li>
               <li>
-                  <a href=""><img src="assets/images/lynda_kevin_thumb.jpg"></a>
+                  <a href="https://www.lynda.com/Kevin-Skoglund/104-1.html">
+                      <img src="assets/images/lynda_kevin_thumb.jpg">
+                  </a>
               </li>
               <li>
-                  <a href=""><img src="assets/images/lynda_david_thumb.jpg"></a>
+                  <a href="https://www.lynda.com/David-Powers/310454-1.html">
+                      <img src="assets/images/lynda_david_thumb.jpg">
+                  </a>
               </li>
               <li>
-                  <a href=""><img src="assets/images/lynda_simon_thumb.jpg"></a>
+                  <a href="https://www.lynda.com/Simon-Allardice/21-1.html">
+                      <img src="assets/images/lynda_simon_thumb.jpg">
+                  </a>
               </li>
               <li>
-                  <a href=""><img src="assets/images/lynda_james_thumb.jpg"></a>
+                  <a href="https://www.lynda.com/James-Williamson/128-1.html">
+                      <img src="assets/images/lynda_james_thumb.jpg">
+                  </a>
               </li>
           </ul>
         </div>
@@ -203,10 +215,10 @@
             <div class="col-2 spaced-image-description">
               <h4 class="article-subtitle">WP REST API</h4>
               <ul class="article-description">
-                <li>Built a <a href="">Latest Posts plugin</a> with REST</li>
-                <li>Built a <a href="">Simple Theme</a> with REST and AngularJS</li>
-                <li>Built a <a href="">Codepen</a> that uses REST to pull posts</li>
-                <li>Build<em>ing</em> an <a href="">Advent calendar</a> using REST and ReactJS</li>
+                <li>Built a <a href="https://github.com/jekkilekki/plugin-jkl-rest-related">Latest Posts plugin</a> with REST</li>
+                <li>Built a <a href="https://github.com/jekkilekki/theme-resting">Simple Theme</a> with REST and AngularJS</li>
+                <li>Built a <a href="http://codepen.io/jekkilekki/pen/pNxOJE">Codepen</a> that uses REST to pull posts</li>
+                <li>Build<em>ing</em> an <a href="http://codepen.io/jekkilekki/pen/yVpeBy">Advent calendar</a> using REST and ReactJS</li>
               </ul>
             </div>
             <div class="col-2">
@@ -224,9 +236,9 @@
             <div class="col-2 spaced-image-description">
               <h4 class="article-subtitle">React.js</h4>
               <ul class="article-description">
-                <li>Created a <a href="">Codepen Collection</a> using React</li>
-                <li>Learned about using <a href="">React with Babble.js</a></li>
-                <li>Built an <a href="">Advent calendar</a> with React Components</li>
+                <li>Created a <a href="http://codepen.io/collection/DbwrEY/">Codepen Collection</a> using React</li>
+                <li>Learned about using <a href="http://www.aaronsnowberger.com/coding-an-advent-calendar-7/">React with Babble.js</a></li>
+                <li>Built an <a href="http://codepen.io/jekkilekki/pen/yVpeBy">Advent calendar</a> with React Components</li>
               </ul>
             </div>
         </div>
@@ -234,8 +246,8 @@
             <div class="col-2 spaced-image-description">
               <h4 class="article-subtitle">D3.js Charts</h4>
               <ul class="article-description">
-                <li>Worked on numerous <a href="">Codepens</a> that utilize D3</li>
-                <li>Coded <a href="">some Gists</a> to run on bl.ocks.org and tributary.io</li>
+                <li>Worked on numerous <a href="http://codepen.io/collection/ABLwGo/">Codepens</a> that utilize D3</li>
+                <li>Coded <a href="https://bl.ocks.org/jekkilekki">some Gists</a> to run on bl.ocks.org and tributary.io</li>
                 <li>Created the D3 charts on this site
                     <ul>
                         <li>"Lynda.com Authors" bar chart</li>
@@ -253,7 +265,7 @@
         <div class="row spaced-image-row">
             <div class="col-2">
               <figure>
-                  <a class="svg-demo" href="">
+                  <a class="svg-demo" href="http://aaronsnowberger.com/site-demos/sqirl-capital">
                   <?php include( 'content-svg.php' ); ?>
                   </a>
               </figure>
@@ -273,8 +285,8 @@
       <article class="audible">
         <h3 class="article-title">Books "Read"</h3>
         <p>I do most of my "reading" via the Audible app on my 1 hour work commute.
-          But this year I also read my first book <em>entirely in Korean:</em> <a href="">Harry Potter
-          and the Sorcerer's Stone.</a></p>
+          But this year I also read my first book <strong>entirely in Korean:</strong> <em>Harry Potter
+          and the Sorcerer's Stone.</em></p>
         <?php
         // Books Image directory
         $image_dir = 'assets/images/books';
@@ -339,12 +351,12 @@
           <div class="col-2">
             <h4 class="article-subtitle">The Best Books in 2016</h4>
             <ul class="article-description">
-              <li><a href="">Level Up Your Life</a></li>
-              <li><a href="">So Good They Can't Ignore You</a> <span class="list-note">(which has become my life mantra)</span></li>
-              <li><a href="">Creativity, Inc.</a></li>
-              <li><a href="">A Thousand Miles to Freedom</a></li>
-              <li><a href="">Ready Player One</a></li>
-              <li><a href="">Born a Crime</a></li>
+              <li><a href="https://www.audible.com/pd/Level-Up-Your-Life-How-to-Unlock-Adventure-and-Happiness-by-Becoming-the-Hero-of-Your-Own-Story-Audiobook/B01B8IRDDO">Level Up Your Life</a></li>
+              <li><a href="https://www.audible.com/pd/So-Good-They-Cant-Ignore-You-Why-Skills-Trump-Passion-in-the-Quest-for-Work-You-Love-Audiobook/B00995OX28">So Good They Can't Ignore You</a> <span class="list-note">(which has become my life mantra)</span></li>
+              <li><a href="https://www.audible.com/pd/Creativity-Inc-Part-1-Overcoming-the-Unseen-Forces-That-Stand-in-the-Way-of-True-Inspiration-Audiobook/B00IPK3BWQ">Creativity, Inc.</a></li>
+              <li><a href="https://www.audible.com/pd/A-Thousand-Miles-to-Freedom-My-Escape-from-North-Korea-Audiobook/B010VZ4K8G">A Thousand Miles to Freedom</a></li>
+              <li><a href="https://www.audible.com/pd/Ready-Player-One-Part-1-Audiobook/B005FRGT44">Ready Player One</a></li>
+              <li><a href="https://www.audible.com/pd/Born-a-Crime-Stories-from-a-South-African-Childhood-Audiobook/B01IW9TQPK">Born a Crime</a></li>
             </ul>
           </div>
         </div>

@@ -36,23 +36,32 @@
     <div class="row">
     <div class="col-2 wp-cert">
       <p>WordPress Themes</p>
-      <p class="huge-number">1/2/4<i class="dashicons dashicons-admin-appearance"></i></p>
+      <p class="huge-number">1/2/3<i class="dashicons dashicons-admin-appearance"></i></p>
       <ul class="article-description">
-          <li><strong>One</strong> Theme <a href="">in the WP.org repository.</a></li>
-          <li><strong>Two</strong> new themes built with Underscores &amp; Foundation (<a href="">one more submitted</a> for Review).</li>
-          <li><strong>Four</strong> Child Themes built.</p></li>
+          <li><strong>One</strong> Theme <a href="http://wordpress.org/themes/jkl/">in the WP.org repository.</a></li>
+          <li><strong>Two</strong> new themes built with Underscores &amp; Foundation (<a href="https://themes.trac.wordpress.org/ticket/35576">one more submitted</a> for Review).</li>
+          <li><strong>Three</strong> Child Themes built.</p></li>
       </ul>
     </div>
     <div class="col-2 php-cert">
       <p>WordPress Plugins</p>
       <p class="huge-number">2/9<i class="dashicons dashicons-admin-plugins"></i></p>
       <ul class="article-description">
-          <li><strong>Two</strong> new Plugins <a href="">released on WP.org.</a></li>
-          <li><strong>Nine</strong> total Plugins contributed to (and <a href="">one more ready for submission</a> to WP.org).</p></li>
+          <li><strong>Two</strong> <a href="https://wordpress.org/plugins/jkl-timezone-converter/">new Plugins</a> <a href="https://wordpress.org/plugins/jkl-unit-converter/">released on WP.org.</a></li>
+          <li><strong>Nine</strong> total Plugins contributed to (and <a href="https://github.com/jekkilekki/plugin-jkl-primary-categories">one more ready for submission</a> to WP.org).</p></li>
     </div>
     </div>
   </article>
-  <article class="wp-contributions">
+
+    <article class="wp-theme">
+        <h3 class="article-title">My FIRST WordPress.org Theme!</h3>
+        <figure>
+            <img class="wp-theme-full" src="assets/images/01-jkl-screenshot.jpg" alt="JKL WordPress Theme" />
+        </figure>
+        <p class="article-description">This is my FIRST WordPress.org theme! I submitted it in February and it was approved in November.</p>
+    </article>
+
+  <article class="github-contributions">
     <h3 class="article-title">Contributions to GitHub</h3>
     <img class="github-calendar-full" src="assets/images/github-contrib-2016-color.png" alt="Jekkilekki's Github chart" />
     <div class="row">
@@ -73,6 +82,39 @@
       </div>
     </div>
   </article>
+
+  <article class="site-descriptions">
+      <h3 class="article-title">These are a few of my Favorite Things</h3>
+      <p>
+          I've spent this second half of the last year learning more and more about
+          these technologies, and it's been a blast. The last time I remember having
+          such fun learning new technology was when I first began programming in
+          WordPress back in 2012.
+      </p>
+      <ul class="favorite-coding row">
+          <li class="col-4">
+              <figure>
+                  <img src="assets/images/logo-wordpress.png">
+              </figure>
+          </li>
+          <li class="col-4">
+              <figure>
+                  <img src="assets/images/logo-wp-rest-api.png">
+              </figure>
+          </li>
+          <li class="col-4">
+              <figure>
+                  <img src="assets/images/logo-react.png">
+              </figure>
+          </li>
+          <li class="col-4">
+              <figure>
+                  <img src="assets/images/logo-d3.png">
+              </figure>
+          </li>
+      </ul>
+  </article>
+
   <article class="websites">
     <h3 class="article-title">New WordPress Themes &amp; Child Themes</h3>
   </article>
@@ -82,47 +124,40 @@
   <article>
     <?php
     $wp_sites = array(
-        array(
-            'name'  => 'JKL',
-            'type' => 'theme',
-            'url' => 'https://wordpress.org/themes/jkl/',
-            'repo' => 'https://github.com/jekkilekki/theme-jkl',
-            'description' => 'My very first theme in the WP.org repository! A simple black and white modern blog theme with left, right, or no sidebar options, a centered logo with split navigation, and some custom page templates. Template is fully responsive.'
-        ),
+        // array(
+        //     'name'  => 'JKL',
+        //     'type' => 'theme',
+        //     'url' => 'https://wordpress.org/themes/jkl/',
+        //     'repo' => 'https://github.com/jekkilekki/theme-jkl',
+        //     'description' => 'My very first theme in the WP.org repository! A simple black and white modern blog theme with left, right, or no sidebar options, a centered logo with split navigation, and some custom page templates. Template is fully responsive.'
+        // ),
         array(
             'name'  => 'Jinn',
             'type' => 'theme',
             'url' => 'https://themes.trac.wordpress.org/ticket/35576',
             'repo' => 'https://github.com/jekkilekki/theme-jin',
-            'description' => 'A simple portfolio theme built with Sass and Foundation.'
+            'description' => 'A simple portfolio theme built with Sass and Foundation. It is based on Underscores Components and includes support for Jetpack Portfolio and Testimonial Post Types.'
         ),
         array(
             'name' => 'Covies',
             'type' => 'child theme',
-            'url' => '',
+            'url' => 'http://coviescebu.com/',
             'repo' => 'https://github.com/jekkilekki/child-covies',
-            'description' => ''
-        ),
-        array(
-            'name' => 'GPA',
-            'type' => 'child theme',
-            'url' => '',
-            'repo' => '',
-            'description' => ''
+            'description' => 'This site was built as an upgrade from a Wix site one of my co-workers was running for a school he co-owns in the Philippines.'
         ),
         array(
             'name'  => 'MarsX',
             'type' => 'child theme',
             'url' => '',
             'repo' => 'https://github.com/jekkilekki/theme-marsx',
-            'description' => ''
+            'description' => 'MarsX is an underground construction company (start-up) in Korea. This first design was something unique and "space-age" styled.'
         ),
         array(
             'name' => 'MarsXI',
             'type' => 'child theme',
-            'url' => '',
+            'url' => 'https://marsx.kr',
             'repo' => 'https://github.com/jekkilekki/theme-marsxi',
-            'description' => ''
+            'description' => 'Ultimately, MarsX wanted something simpler (more like SpaceX). This second design is a Child Theme of Automattic\'s TwentySeventeen.'
         )
     );
     // Site Image directory
@@ -152,56 +187,31 @@
 <section class="site-images non-wp full-width">
   <article>
     <?php
+    $site_links = array(
+        'http://practicalenglishwriting.com',
+        'http://gpa.justkeeplearning.xyz',
+        'http://jekkilekki.com/lab/trumpinator/',
+        'http://tesol4korea.com',
+        'http://gpa.justkeeplearning.xyz/yearbook/',
+        'http://www.aaronsnowberger.com/site-demos/deanne/',
+        'http://www.aaronsnowberger.com/site-demos/sqirl-capital/',
+        'http://codepen.io/jekkilekki/pen/yVpeBy'
+    );
+
     // Site Image directory
         $site_image_dir = 'assets/images/sites/www';
         $site_images = get_images( $site_image_dir );
 
-      for( $i = 0; $i < count( $site_images ); $i++ ) {
-        echo '<figure>';
-        echo '<img src="' . $site_images[$i] . '">';
-        echo '</figure>';
-     }
-    ?>
-  </article>
-</section>
+      for( $i = 0; $i < count( $site_images ); $i++ ) { ?>
 
-<section class="totals">
-  <div class="row">
-      <aside class="section-aside">
-      </aside>
-    <div class="section-content">
-        <article class="site-descriptions">
-            <h3 class="article-title">These are a few of my Favorite Things</h3>
-            <p>
-                I've spent this second half of the last year learning more and more about
-                these technologies, and it's been a blast. The last time I remember having
-                such fun learning new technology was when I first began programming in
-                WordPress back in 2012.
-            </p>
-            <ul class="favorite-coding row">
-                <li class="col-4">
-                    <figure>
-                        <img src="assets/images/logo-wordpress.png">
-                    </figure>
-                </li>
-                <li class="col-4">
-                    <figure>
-                    <img src="assets/images/logo-wp-rest-api.png">
-                    </figure>
-                </li>
-                <li class="col-4">
-                    <figure>
-                    <img src="assets/images/logo-react.png">
-                    </figure>
-                </li>
-                <li class="col-4">
-                    <figure>
-                    <img src="assets/images/logo-d3.png">
-                    </figure>
-                </li>
-            </ul>
-        </article>
-    </div>
-  </div>
+        <figure>
+            <img src="<?php echo $site_images[$i]; ?>">
+            <span>
+                <a class="repo-link chart-label" href="<?php echo $site_links[$i]; ?>">Go &rarr;</a>
+            </span>
+        </figure>
+
+    <?php } ?>
+  </article>
 </section>
 </div>

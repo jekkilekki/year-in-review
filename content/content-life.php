@@ -1,5 +1,5 @@
 <div class="color-change">
-<section id="life" class="color-change">
+<section id="life">
   <div class="row">
   <aside class="section-aside">
       <div class="aside-content">
@@ -16,7 +16,7 @@
             <li>Wife finished 100-page thesis + worked 400+ hours teaching Korean in the University</li>
             <li>Taught 3 new (tech) courses!</li>
             <li>Had 4 tech interviews</li>
-            <li>Completed 71 <a href="">Lynda.com</a> courses</li>
+            <li>Completed 71 <a href="https://www.lynda.com/AllCertificates/User/536012">Lynda.com</a> courses</li>
             <li>Learned TONS of PHP (more to learn)</li>
             <li>Got back to the gym regularly</li>
             <li>Worked with 3 startups</li>
@@ -33,7 +33,7 @@
       <div class="col-2">
         <h3 class="article-title">KM Cycled</h3>
         <p class="large-number">4,000</p>
-        <p class="article-description">16km daily commute &times; 8 months. At my average speed (25kph), that's 160 hours on the bike!</p>
+        <p class="article-description">16km daily commute &times; 8 months. At my average speed (25kph), that's <strong>160 hours</strong> on the bike!</p>
       </div>
       <!-- <div class="col-3">
         <h3 class="article-title">Protein Consumed</h3>
@@ -52,8 +52,8 @@
         <p class="large-number"><?php echo make_time( $lynda_time + $books_time ); ?></p>
         <p class="article-description">That's <?php echo make_time( $total_time, true, true ); ?>! And it doesn't include the numerous podcasts I've listened to. Here are my favorites:</p>
         <ul class="article-description">
-            <li><a href="">Post Status Draft</a></li>
-            <li><a href="">The Tim Ferriss Show</a></li>
+            <li><a href="https://poststatus.com/category/draft/">Post Status Draft</a></li>
+            <li><a href="http://tim.blog/podcast/">The Tim Ferriss Show</a></li>
         </ul>
       </div>
       <!-- <div class="col-3">
@@ -70,7 +70,7 @@
         </div>
       <div class="col-2">
         <h3 class="article-title">Personal Retreats</h3>
-        <p class="large-number">2.5</p>
+        <p class="large-number">2</p>
         <p class="article-description">I like to take a personal retreat at least every Quarter to get away from the
             busy-ness of life, think, pray, and plan for the future. However, from late June last year, I failed to do
             so, and I feel it caused me to make some bad decisions toward the end of the year (because I was unclear in
@@ -92,7 +92,9 @@
       <div class="col-2">
         <h3 class="article-title">New Tech Courses</h3>
         <p class="large-number">3</p>
-        <p class="article-description">I've taught a total of 8 different programming and graphic design courses since 2013.</p>
+        <p class="article-description">Besides the number of Lynda courses completed and the number of projects I've
+            had the pleasure to work on this year, I was also able to develop the curriculum and teach 3 entirely NEW
+            Technology courses at high school. All told, I've taught a total of <em>8 different</em> programming and graphic design courses since 2013.</p>
       </div>
       <!-- <div class="col-3">
           <h3 class="article-title">Tech Interviews</h3>
@@ -108,8 +110,8 @@
       </div>
       <div class="col-2">
         <h3 class="article-title">Debt Paid (Debt FREE!)</h3>
-        <p class="large-number"><span>$</span>10,029.21</p>
-        <p class="article-description">That's a total of $41,000 since 2011!<br>(I paid $50,867.10 including interest.)</p>
+        <p class="large-number"><span>$</span>10,029<span>. 21</span></p>
+        <p class="article-description">My full student loan amount was $41,000 since 2011!<br>(But we actually paid $50,867.10 when interest is included.)</p>
       </div>
       <!-- <div class="col-3">
         <h3 class="article-title">Weight Lost</h3>
@@ -129,9 +131,13 @@
         <p class="article-description">She graduates February 22, 2017 with a Master's degree in Teaching Korean to Foreigners.</p>
       </div> -->
       <div class="col-2">
-          <h3 class="article-title">Classroom Hours (Wife)</h3>
+          <h3 class="article-title">Classroom Hours (Wife's new job)</h3>
           <p class="large-number">400+</p>
-          <p class="article-description">She's taught Korean in Chonbuk University since mid-June! Hoping to continue!</p>
+          <p class="article-description">My wife has been privileged enough to have been
+              contacted in the summer semester to teach a single Korean class to a group of
+              Vietnamese students. Since then, she's continued teaching at Chonbuk University and
+              has accrued over 400 hours of classroom Korean teaching experience! We're hoping
+              that will continue in the next year!</p>
       </div>
     </article>
 
@@ -143,7 +149,8 @@
       <div class="col-2">
         <h3 class="article-title">Hours with Friends</h3>
         <p class="large-number">50-60</p>
-        <p class="article-description">That's almost 1 hour per week outside normal commitments. Quite an improvement over my previous 1 hour per month.</p>
+        <p class="article-description">That's almost 1 hour per week outside normal commitments.
+            It's quite an improvement over my previous 1 hour or less per month in 2015.</p>
       </div>
       <!-- <div class="col-3">
           <h3 class="article-title">Tech Interviews</h3>
@@ -159,7 +166,7 @@
       </div>
       <div class="col-2">
         <h3 class="article-title">Overall Life Satisfaction</h3>
-        <p class="large-number">49.375<span>%</span></p>
+        <p class="large-number">49<span>. 375%</span></p>
         <p class="article-description">As you can see in the chart in the next section, although I'm not
             100% satisfied with life (no one ever is), I'm much more content this year than previous years. (43.125% in 2015, 37.5% in 2014)
         </p>
